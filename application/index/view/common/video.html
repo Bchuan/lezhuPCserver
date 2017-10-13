@@ -1,0 +1,445 @@
+
+
+<style>
+	.video-box{
+		display: inline-block;
+	    width: 100%;
+	    margin-top: 100px;
+	    background: url(http://lezhu.tv/App/Tpl/Public/lzimg/index/bg-video.jpg) no-repeat left center;
+	}
+	.video-box-content{
+		width: 90%;
+		height: 100%;
+		margin: auto;
+	}
+	.title{
+		width: 100%;
+	}
+	.video-box .title h3{
+		color: #fff;
+		font-size: 36px;
+    	font-weight: 200;
+    	text-align: center;
+    	margin: 84px 0 40px 0;
+	}
+	.border-bottom {
+	    width: 60px;
+	    height: 2px;
+	    background-color: #ccc;
+	    margin: auto;
+	    margin-bottom: 50px;
+	}
+	
+	.video-box .video-news{
+	    overflow: hidden;
+	    width: 100%;
+	    background-color: #fff;
+	    margin-bottom: 70px;
+	}
+	.videos{
+		float: left;
+	    width: 694px;
+	    height: 450px;
+	    padding: 60px 60px 0 60px;
+	    position: relative;
+	    display: none;
+	    box-sizing: border-box;
+	}
+	.videos:first-child{
+		display: block;
+	}
+	embed {
+    width: 100%;
+    height: 100%;
+	}
+
+	.new-media{
+		margin: 60px 0;
+    	overflow: hidden;
+	}
+	.new-media li{
+		display: table;
+	    vertical-align: middle;
+	    text-align: center;
+	    float: left;
+	    width: 30%;
+	    min-height: 80px;
+	    transition: all 0.6s;
+	}
+	.new-media li:hover {
+	    transform: scale(1.10);
+	    -ms-transform: scale(1.10) cursor:pointer;
+	}
+	.new-media li a{
+		display: table-cell;
+    	vertical-align: middle;
+	}
+	.new-media li a img{
+		width: 100%;
+	}
+	.video-news .min-media {
+	    width: 100%;
+	    background-color: #fff;
+	    overflow: hidden;
+	    box-sizing: border-box;
+	    padding: 0 50px 30px 50px;
+	}
+	.video-news .min-media li {
+		position: relative;
+	    float: left;
+	    width: 19%;
+	    margin-top: 30px;
+	    /*margin: 30px 0 10px 10px;*/
+	    margin-bottom: 10px;
+	    margin-left: 1%;
+	}
+	.video-news .min-media li span{
+		position: absolute;
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+	.video-news .min-media li span:hover{
+		box-shadow: 0 0 5px rgba(0,0,0,.7);
+	}
+	.video-news .min-media img {
+	    display: inline-block;
+	    width: 100%;
+	    /*height: 100%;*/
+	    vertical-align: middle;
+	    transition: all 0.6s;
+	}
+	.video-box .swiper-container{
+		height: 26px;
+	    margin-bottom: 30px;
+	}
+	.video-box .swiper-container .swiper-slide{
+		text-align: center;
+	}
+	/*移动端*/
+	.video-minbox{
+		width: 100%;
+		height: auto;
+		background: #f5f5fc;
+	}
+	.video-minbox .title{
+		padding-top: 20px;
+	}
+	.video-minbox .title p{
+		font-size: 22px;
+		text-align: center;
+	}
+	.video-minbox .min-video{
+		width: 100%;
+		height: auto;
+	}
+	.video-minbox .min-video ul{
+		display: table;
+	}
+	.video-minbox .min-video li{
+		box-sizing: border-box;
+		position: relative;
+	}
+	.video-minbox .min-video .video-first{
+		width: 100%;
+		float: left;
+	}
+	.video-minbox .min-video .video-minnav{
+		width: 50%;
+		padding-top: 10px;
+		display:table-cell;
+		float: left;
+	}
+
+	/*有问题start*/
+	.video-minbox .min-video ul li:nth-child(2n){
+		padding-right: 10px;
+	}
+	/*.video-minbox .min-video ul li:nth-child(2n+1){
+		padding-left: 10px;
+	}*/
+	/*有问题end*/
+	.video-minbox .min-video li img{
+		display: inline-block;
+	    width: 100%;
+	    vertical-align: middle;
+	}
+	.video-minbox .min-video .video-minnav img{
+		height: 150px;
+	}
+    .video-minbox .min-video li p{
+    	color: #333;
+	    margin-top: 5px;
+	    text-align: center;
+    }
+	.video-minbox .min-video li span{
+		position: absolute;
+		display: inline-block;
+		height: 45px;
+		width: 45px;
+		background: rgba(0,0,0,0.5);
+		border-radius: 50%;
+		z-index: 2;
+		left: 50%;
+		top: 50%;
+		margin-top: -45px;
+		margin-left: -30px;
+	}
+	.video-minbox .min-video li span i{
+		display: block;
+		width: 0;
+	    height: 0;
+	    border-top: 15px solid transparent;
+	    border-left: 25px solid rgba(255,255,255,0.5);
+	    border-bottom: 15px solid transparent;
+	    margin: 8px 13px;
+	}
+	.video-minbox .video-shadow{
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		background: rgba(0,0,0,0.5);
+		left: 0;
+		top: 0;
+		z-index: 10;
+		display: none;
+	}
+	.video-minbox .video-view{
+		width: 100%;
+		position: fixed;
+		left: 0;
+		top: 0;
+		margin:10% 0 0 0; 
+		z-index: 11;
+		display: none;
+	}
+	.video-minbox .video-view embed{
+		width: 100%;
+		height: 300px;
+		/*display: none;*/
+	}
+	.video-minbox{
+	 	display: none;
+	 }
+
+	@media screen and (max-width:1080px){
+	  	.videos{
+		    width: 620px;
+		}
+		.new-media{
+			margin-bottom: 0;
+		}
+		.new-media li{
+		    width: 50%;
+		    text-align: center;
+		}
+		.new-media li{
+			width: 100px;
+		}
+	}
+	@media screen and (max-width:930px){
+	  	.videos{
+		    width: 100%;
+		}
+		.new-media {
+		   display: none;
+		}
+	}
+	@media screen and (max-width:769px){
+	  .video-box{
+	  	display: none;
+	  }
+
+	  .video-minbox{
+	  	display: block;
+	  }
+	}
+</style>
+	<div class="video-box">
+	    <div class="video-box-content">
+	        <div class="title">
+	            <h3>智慧社区：一部手机刷遍小区里，打造楼盘新名片！</h3>
+	        </div>
+	        <div class="border-bottom"></div>
+	        <div class="video-news">
+	        	<div class="videos">
+	        		<embed class="player" src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&amp;v=20161117&amp;vid=j0501cwp1k0&amp;auto=1" loop="loop" type="application/x-shockwave-flash">
+	        	</div>
+	        	<div class="videos">
+	        		<embed class="player" src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=c05510wecrz&auto=1" loop="loop" type="application/x-shockwave-flash">
+	        			<!-- https://v.qq.com/x/page/c05510wecrz.html -->
+	        	</div>
+	        	<div class="videos">
+	        		<embed class="player" src="http://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?vid=z05498yaley&amp;max_age=86400&amp;v=20161117&amp;auto=1" loop="loop" type="application/x-shockwave-flash">
+	        			<!--https://v.qq.com/x/page/z05498yaley.html -->
+	        	</div>
+	        	<div class="videos">
+	        		<embed class="player" src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=e05530f5pqg&auto=1" loop="loop" type="application/x-shockwave-flash">
+	        	</div>
+	        	<div class="videos">
+	        		<embed class="player" src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=b0549ejmv9d&auto=1" loop="loop" type="application/x-shockwave-flash">
+	        	</div>
+	        	<div class="new-media">
+	        		<ul>
+	        			<li><a href="#"><img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/media1.jpg" alt=""></a></li>
+	        			<li><a href="#"><img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/media1.jpg" alt=""></a></li>
+	        			<li><a href="#"><img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/media1.jpg" alt=""></a></li>
+	        			<li><a href="#"><img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/media1.jpg" alt=""></a></li>
+	        			<li><a href="#"><img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/media1.jpg" alt=""></a></li>
+	        			<li><a href="#"><img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/media1.jpg" alt=""></a></li>
+	        			<li><a href="#"><img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/media1.jpg" alt=""></a></li>
+	        			<li><a href="#"><img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/media1.jpg" alt=""></a></li>
+	        			<li><a href="#"><img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/media1.jpg" alt=""></a></li>
+	        		</ul>
+	        	</div>
+	        	<div class="min-media">
+	                <ul>
+	                    <li class="video-nav" video="2" vid="2">
+	                        <img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/video-image1.png" alt="">
+	                        <span></span>
+	                    </li>
+	                    <li class="video-nav" video="3" vid="3">
+	                        <img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/video-image2.png" alt="">
+	                        <span></span>
+	                    </li>
+	                    <li class="video-nav" video="4" vid="4">
+	                        <img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/video-image3.png" alt="">
+	                        <span></span>
+	                    </li>
+	                    <li class="video-nav" video="5" vid="5">
+	                        <img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/video-image4.png" alt="">
+	                        <span></span>
+	                    </li>
+	                    <li class="video-nav" video="6" vid="6">
+	                        <img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/video-image5.png" alt="">
+	                        <span></span>
+	                    </li>
+	                </ul>
+	            </div>
+
+	            <div class="swiper-container news-swiper">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide">Slide 1</div>
+				        <div class="swiper-slide">Slide 2</div>
+				        <div class="swiper-slide">Slide 3</div>
+				        <div class="swiper-slide">Slide 4</div>
+				    </div>
+				</div>
+	        </div>
+	    </div>
+	</div>
+
+	<div class="video-minbox">
+		<div class="video-box-content">
+	        <div class="title">
+	            <p>智慧社区</p>
+	            <p>一部手机刷遍小区里，打造楼盘新名片！</p>
+	        </div>
+	        <div class="border-bottom"></div>
+	        <div class="min-video">
+	        	<ul>
+		        	<li class="video-first mvideo">
+                     
+                        <img src="http://www.lezhu.tv/Upload/ueditor/image/20170606/1496732088321338.png" alt="中央13台《面对面》（乐住专访）">
+                        <p>中央13台《面对面</p>
+                        <span><i></i></span>
+                    </li>
+		        	<li class="video-minnav mvideo">
+		              
+                        <img src="http://www.lezhu.tv/Upload/ueditor/image/20151229/1451381521753614.png" alt="中央13台《面对面》（乐住专访）">
+                        <p>中央13台《面对面</p>
+                        <span><i></i></span>
+		            </li>
+		        	<li class="video-minnav mvideo">
+		              
+                        <img src="http://www.lezhu.tv/Upload/ueditor/image/20151229/1451381521753614.png" alt="中央13台《面对面》（乐住专访）">
+                        <p>中央13台《面对面</p>
+                        <span><i></i></span>
+		            </li>
+		            <li class="video-minnav mvideo">
+		              
+                        <img src="http://www.lezhu.tv/Upload/ueditor/image/20151229/1451381521753614.png" alt="中央13台《面对面》（乐住专访）">
+                        <p>中央13台《面对面</p>
+                        <span><i></i></span>
+		            </li>
+		            <li class="video-minnav mvideo">
+		              
+                        <img src="http://www.lezhu.tv/Upload/ueditor/image/20151229/1451381521753614.png" alt="中央13台《面对面》（乐住专访）">
+                        <p>中央13台《面对面</p>
+                        <span><i></i></span>
+		            </li>
+		        </ul>
+	        </div>
+	        <div class="video-shadow"></div>
+	        <div class="video-view" id="playpoint">
+	        	
+	        </div>
+	    </div>
+	</div>
+<script>
+	$(function(){
+		var screenwidth=$(window).width();
+		//监听屏幕可视宽度
+		$(window).resize(function () {          //当浏览器大小变化时
+			screenwidth=$(window).width();
+			console.log($(window).width()+'//浏览器时下窗口可视区域宽度'); 
+		    // console.log($(window).height()+'//浏览器时下窗口可视区域高度');          //浏览器时下窗口可视区域高度
+		    // console.log($(document).height()+'//浏览器时下窗口文档的高度');        //浏览器时下窗口文档的高度
+		    // console.log($(document.body).height()+'//浏览器时下窗口文档body的高度');   //浏览器时下窗口文档body的高度
+		    // console.log($(document.body).outerHeight(true)+'//浏览器时下窗口文档body的总高度 '); //浏览器时下窗口文档body的总高度 包括border padding margin
+		});
+
+		//页面加载完毕时
+		//获取视频id存起来
+		var videoid=['j0501cwp1k0','c05510wecrz','z05498yaley','e05530f5pqg','b0549ejmv9d'];
+
+		//pc页面切换视频
+		$('.video-nav').each(function(index){
+			$(this).click(function(){
+				console.log(index);
+				$('.videos').each(function(){
+					$(this).css({"display":"none"})
+				})
+				$('.videos').eq(index).css({"display":"block"})
+			})
+		})
+		
+		//pc页面时，新闻热点轮播
+		var mySwiper = new Swiper ('.news-swiper', {
+		   direction: 'vertical',
+		   loop: true,
+		   autoplay: 5000,
+		})      
+
+		//移动页面时，视频点击播放
+		$('.mvideo').each(function(index){
+			$(this).click(function(){
+				console.log(index)
+				$('.video-minbox .video-shadow').css({"display":"block"});
+				$('.video-minbox .video-view').css({"display":"block"});
+				btn(videoid[index]);
+			})
+		})
+		//移动页面时，视频弹框关闭
+		$('.video-minbox .video-shadow').click(function(){
+			$(this).css({"display":"none"});
+			$('.video-minbox .video-view').css({"display":"none"}).html('');
+
+		})
+
+		//腾讯视频api调用，移动端调用
+		var video = new tvp.VideoInfo(); 
+		function btn(id){  
+	             video.setVid(id);  
+	             var player = new tvp.Player(screenwidth,390);  
+	             player.setCurVideo(video);  
+	             player.addParam("autoplay","1");  
+	             player.addParam("adplay","0");  
+	             player.addParam("player","html5"); 
+	             // player.addParam("pic","http://img.lanrentuku.com/img/allimg/1604/14603400449013.jpg");  
+	             player.write("playpoint");  
+		}   
+	})
+</script>
