@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	$('.hezuo').mouseover(function(){
-		$('.hezuo_hide').show();
+	$('.bc_navlistbar .hezuo').mouseover(function(){
+		$('.bc_navlistbar .hezuo_hide').show();
 	}).mouseout(function(){
-		$('.hezuo_hide').hide();
+		$('.bc_navlistbar .hezuo_hide').hide();
 	});
 	function goright(){
 		document.getElementById("donghuakuang").style.marginRight ="-260px";
