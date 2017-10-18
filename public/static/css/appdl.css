@@ -1,0 +1,72 @@
+@charset "utf-8";
+ 
+*
+{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+.app{
+	background: url("../images/getapp/bg_appdl.png");
+	height: 700px;
+	text-align: center;
+	color: white;
+}
+.appdl{
+	width:80%;
+	margin:0 auto;
+	padding:10% 0;
+}
+.appdl h1{
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 50px;
+}
+.app_l{
+	width:50%;
+	float:left;
+}
+.app_r{
+	width:50%;
+	float:left;
+}
+.app_l img{
+	width:60%;
+}
+.app_r h3{
+	margin-top:0;
+	margin-bottom: 10%;
+}
+.app_r img{
+	width:45%;
+	margin-bottom: 5%;
+}
+.app_r span:hover{
+	cursor:pointer;
+	color:green;
+}
+.app_r_l{
+	width:50%;
+	float: left;
+}
+.app_r_r{
+	width:50%;
+	float: right;
+}
+.app_r_l > div,.app_r_r > div{
+	width:70%;
+	border:2px solid white;
+	margin: 0 auto;
+}
+.app_r_l > div > img,.app_r_r > div > img{
+	width:20%;
+	margin-top: 4%;
+}
+.app_r_l > div > span,.app_r_r > div > span{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+

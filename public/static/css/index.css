@@ -1,0 +1,54 @@
+/*首页样式*/
+
+body,div,ul,li,span,a,b,i{
+	margin: 0;
+	padding: 0;
+}
+
+ul,li{
+	list-style: none;
+}
+
+h3{
+	font-size: 36px;
+	font-weight: 200;
+	text-align: center;
+	margin: 84px 0 40px 0;
+}
+a{
+	text-decoration:none;
+	display: inline-block;
+}
+a:hover{background:none;}
+.border-bottom {
+	width: 60px;
+	height: 2px;
+	background-color: #ccc;
+	margin: auto;
+	margin-bottom: 80px;
+}
+
+.container-index{
+	margin-top: 80px;
+	overflow: hidden;
+}
+@media screen and (max-width:769px){
+	  h3{
+	  	font-size: 22px;
+	    margin-bottom: 10px;
+	    margin-top: 25px;
+	  }
+	  .border-bottom {
+	    margin-bottom: 30px !important;
+	  }
+	  .connect-index{
+	  	display: none !important;
+	  }
+	  .connect-min{
+    	display: block !important;
+      }
+	}
+
+
+
+/**/

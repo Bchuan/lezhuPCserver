@@ -1,0 +1,69 @@
+@charset "utf-8";
+ 
+*
+{
+	margin:0;
+	padding:0;
+	border:0;
+}
+/*头部*/
+.xinwen{
+	margin-top: 80px;
+}
+.xw_head{
+	height:100px;
+	background-image: url("../images/newsdeta/xinwen01.jpg");
+	background-position: 100%;
+}
+.xw_head img{
+	margin:13px;
+	margin-left:5%;
+}
+.xw_head span{
+	color:white;
+	font-size:26px;
+}
+
+/*文章*/
+.wenzhang{
+	text-align: center;
+	overflow: hidden;
+}
+.wenzhang > h3{
+	margin-top: 3%;
+	font-weight: bold;
+}
+.wenzhang > p{
+	color: #6f6e6e;
+	margin-bottom: 3%;
+}
+.main_01,.main_02{
+	margin:0 auto;
+	padding-bottom: 10px;
+	width:85%;
+	border-bottom:2px solid green;
+}
+.main_01 p,.main_02 p{
+	font-size: 15px;
+	line-height: 1.7;
+	margin:2% 0;
+}
+.prepage,.nextpage{
+	width:50%;
+	height:40px;
+	line-height: 40px;
+}
+.prepage{
+	float:left;
+}
+.nextpage{
+	float:right;
+}
+.prepage a,.nextpage a{
+	color: black;
+}
+.prepage a:hover,.nextpage a:hover{
+	text-decoration: none;
+	color: green;
+	cursor: pointer;
+}
