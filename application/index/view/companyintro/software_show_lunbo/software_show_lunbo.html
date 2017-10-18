@@ -1,0 +1,88 @@
+<div class="software_show_lunbo">
+	<h1>软件著作权</h1>
+	<div class="ul_move">
+		<ul>
+			<li>
+				<img src="__STATIC_PATH__/static/companyintro/images/copyright1.jpg"/>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/companyintro/images/copyright2.jpg"/>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/companyintro/images/copyright3.jpg"/>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/companyintro/images/copyright4.jpg"/>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/companyintro/images/copyright5.jpg"/>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/companyintro/images/copyright6.jpg"/>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/companyintro/images/copyright1.jpg"/>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/companyintro/images/copyright2.jpg"/>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/companyintro/images/copyright3.jpg"/>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/companyintro/images/copyright4.jpg"/>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/companyintro/images/copyright5.jpg"/>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/companyintro/images/copyright6.jpg"/>
+			</li>
+		</ul>
+	</div>
+	
+</div>
+
+<style type="text/css">
+	.software_show_lunbo{
+		margin-top: 75px;
+		padding: 70px 20px 20px 20px;
+		
+	}
+	.software_show_lunbo h1{
+		padding-left: 20px;
+		border-left: 6px solid #49d074;
+		font-size: 30px;
+		height: 33px;
+		line-height: 33px;
+		margin-bottom: 45px;
+	}
+	.software_show_lunbo .ul_move{
+		position: relative;
+		height: 430px;
+		overflow: hidden;
+	}
+	.software_show_lunbo .ul_move:hover ul{
+		animation-play-state: paused;
+	}
+	.software_show_lunbo .ul_move ul{
+		overflow: hidden;
+		position: absolute;
+		left: 0px;
+		width: 300%;
+		animation: move_ul_left 10s infinite linear;
+	}
+	.software_show_lunbo .ul_move ul li{
+		list-style: none;
+		float: left;
+		width: 320px;
+	}
+	.software_show_lunbo .ul_move ul li img{
+		margin-right: 20px;
+		width: calc(100% - 20px);
+	}
+	@keyframes move_ul_left{
+		from{left: 0px;}
+		to{left: -1920px;}
+	}
+</style>

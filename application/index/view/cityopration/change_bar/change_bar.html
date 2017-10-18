@@ -1,0 +1,64 @@
+<div class="change_bar">
+	<p>滑动改变导航条高亮</p>
+</div>
+
+<script type="text/javascript">
+	var barH1=$('.trademark_concept').offset().top;
+	var barH2=$('.market_prospect').offset().top;
+	var barH3=$('.why_select').offset().top;
+	var barH4=$('.lezhu_product').offset().top;
+	var barH5=$('.tv_report').offset().top;
+	var barH6=$('.profit_budget').offset().top;
+	var barH7=$('.welcome_join').offset().top;
+	var barH8=$('.cooperation_relation').offset().top;
+	var barH9=$('.cooperation_advantage').offset().top;
+	var barH10=$('.cooperation_process').offset().top;
+	console.log($('.fixed_navbar ul li').eq(0).find('a'))
+	console.log($('.fixed_navbar ul li').eq(0).siblings().find('a'))
+//	$('.fixed_navbar ul li').eq(0).find('a').css({'background':'#f0f9f1','color':'#333'})
+	$(window).scroll(function(){
+		var H=$(document).scrollTop();
+//		console.log(H)
+//		console.log(barH2)
+		if(H<barH2-200){
+			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
+			$('.fixed_navbar ul li').eq(0).find('a').css({'background':'#f0f9f1','color':'#333'})
+		}
+		else if(H<barH3-200&&H>=barH2-200){
+			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
+			$('.fixed_navbar ul li').eq(1).find('a').css({'background':'#f0f9f1','color':'#333'})
+		}
+		else if(H<barH4-200&&H>=barH3-200){
+			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
+			$('.fixed_navbar ul li').eq(2).find('a').css({'background':'#f0f9f1','color':'#333'})
+		}
+		else if(H<barH5-200&&H>=barH4-200){
+			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
+			$('.fixed_navbar ul li').eq(3).find('a').css({'background':'#f0f9f1','color':'#333'})
+		}
+		else if(H<barH6-200&&H>=barH5-200){
+			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
+			$('.fixed_navbar ul li').eq(4).find('a').css({'background':'#f0f9f1','color':'#333'})
+		}
+		else if(H<barH7-200&&H>=barH6-200){
+			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
+			$('.fixed_navbar ul li').eq(5).find('a').css({'background':'#f0f9f1','color':'#333'})
+		}
+		else if(H<barH8-200&&H>=barH7-200){
+			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
+			$('.fixed_navbar ul li').eq(6).find('a').css({'background':'#f0f9f1','color':'#333'})
+		}
+		else if(H<barH9-200&&H>=barH8-200){
+			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
+			$('.fixed_navbar ul li').eq(7).find('a').css({'background':'#f0f9f1','color':'#333'})
+		}
+		else if(H<barH10-200&&H>=barH9-200){
+			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
+			$('.fixed_navbar ul li').eq(8).find('a').css({'background':'#f0f9f1','color':'#333'})
+		}
+		else if(H>=barH10-200){
+			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
+			$('.fixed_navbar ul li').eq(9).find('a').css({'background':'#f0f9f1','color':'#333'})
+		}
+	})
+</script>

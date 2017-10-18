@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\getapp\index.html";i:1507886064;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\head.html";i:1507889477;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:82:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\getapp\index.html";i:1507886064;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\head.html";i:1508310960;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,37 +18,40 @@
 	<link type="text/css" rel="stylesheet" href="__STATICPATH__/static/css/head.css" />
 	<script type="text/javascript" src="__STATICPATH__/static/js/head.js" ></script>
 <body>
-	<div class="header"> <!-- 头部导航 -->
-		<div class="header_l">
-			<img src="__STATICPATH__/static/images/nav_foot/logo1.jpg" alt="">
+	<div class="bc_navlistbar">
+		<div class="header"> <!-- 头部导航 -->
+			<div class="header_l">
+				<img src="__STATICPATH__/static/images/nav_foot/logo1.jpg" alt="">
+			</div>
+			<div class="header_m">
+				<ul class="header_m_ul">
+					<li class="active"><a href="<?php echo url('/index/index/index'); ?>">首页</a></li>
+					<li><a href="<?php echo url('/index/productintro/index'); ?>">产品简介</a></li>
+					<li class="hezuo">合作专区
+						<span class="glyphicon glyphicon-chevron-down"></span>
+						<div class="hezuo_hide">
+							<ul>
+								<li><a href="<?php echo url('/index/cityopration/index'); ?>">城市运营商</a></li>
+								<li><a href="<?php echo url('/index/advertise/index'); ?>">广告合作</a></li>
+								<li><a href="<?php echo url('/index/property/index'); ?>">物业合作</a></li>
+								<li><a href="<?php echo url('/index/develop/index'); ?>">开发商合作</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="<?php echo url('/index/companyintro/index'); ?>">企业简介</a></li>
+					<li><a href="<?php echo url('/index/newslist/index'); ?>">新闻动态</a></li>
+					<li><a href="<?php echo url('/index/connectus/index'); ?>">联系我们</a></li>
+					<li><a href="<?php echo url('/index/getapp/index'); ?>">App下载</a></li>
+				</ul>
+			</div>
+			<div class="header_r">
+				<span class="glyphicon glyphicon-hand-right"></span>
+				<span>全国招商热线 : 400-8090-590</span>
+			</div>
+			<div id="donghuakuang"></div>
 		</div>
-		<div class="header_m">
-			<ul class="header_m_ul">
-				<li class="active"><a href="<?php echo url('/index/index/index'); ?>">首页</a></li>
-				<li><a href="#">产品简介</a></li>
-				<li class="hezuo">合作专区
-					<span class="glyphicon glyphicon-chevron-down"></span>
-					<div class="hezuo_hide">
-						<ul>
-							<li><a href="#">城市运营商</a></li>
-							<li><a href="#">广告合作</a></li>
-							<li><a href="<?php echo url('/index/property/index'); ?>">物业合作</a></li>
-							<li><a href="<?php echo url('/index/develop/index'); ?>">开发商合作</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="#">企业简介</a></li>
-				<li><a href="<?php echo url('/index/newslist/index'); ?>">新闻动态</a></li>
-				<li><a href="<?php echo url('/index/connectus/index'); ?>">联系我们</a></li>
-				<li><a href="<?php echo url('/index/getapp/index'); ?>">App下载</a></li>
-			</ul>
-		</div>
-		<div class="header_r">
-			<span class="glyphicon glyphicon-hand-right"></span>
-			<span>全国招商热线 : 400-8090-590</span>
-		</div>
-		<div id="donghuakuang"></div>
 	</div>
+	
 <div class="app">
 	<div class="appdl">
 		<h1>小区生态链的"连接器"</h1>

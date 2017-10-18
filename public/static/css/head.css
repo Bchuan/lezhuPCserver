@@ -15,7 +15,7 @@ a:hover{
 	text-decoration: none;
 }
 /*头部导航*/
-.header{
+.bc_navlistbar .header{
 	position:fixed;
 	background: white;
 	top:0;
@@ -24,14 +24,14 @@ a:hover{
 	width:100%;
 	border-bottom: 1px solid #ccc;
 }
-.header_l img{
+.bc_navlistbar .header_l img{
 	margin:10px 20% 10px 0;
 }
-.header_l,.header_m{
+.bc_navlistbar .header_l,.header_m{
 	float:left;
 	color:#777;
 }
-.header_m > ul > li{
+.bc_navlistbar .header_m > ul > li{
 	display: block;
 	float:left;
 	height:80px;
@@ -39,15 +39,15 @@ a:hover{
 	line-height: 80px;
 	text-align: center;
 }
-.header_m > ul > li:hover,.active a{
+.bc_navlistbar .header_m > ul > li:hover,.active a{
 	color:#44be3f;
 	cursor:pointer;
 }
-.hezuo{
+.bc_navlistbar .hezuo{
 	position:relative;
 }
 
-.hezuo_hide{
+.bc_navlistbar .hezuo_hide{
 	position:absolute;
 	display:none;
 	z-index:1;
@@ -55,7 +55,7 @@ a:hover{
 	border:1px solid rgba(0,0,0,.15);
 	border-radius:5px;
 }
-.hezuo_hide > ul >li{
+.bc_navlistbar .hezuo_hide > ul >li{
 	color:black;
 	height:50px;
 	width:100px;
@@ -63,19 +63,19 @@ a:hover{
 	list-style: none;
 	text-align:center;
 }
-.hezuo_hide > ul >li:hover{
+.bc_navlistbar .hezuo_hide > ul >li:hover{
 	color:#44be3f;
 	background-color:GhostWhite;
 }
-.header_r{
+.bc_navlistbar .header_r{
 	float:right;
 	margin-right: 30px;
 }
-.header_r span{
+.bc_navlistbar .header_r span{
 	font-size: 16px;
 	line-height: 80px;
 }
-#donghuakuang{
+.bc_navlistbar #donghuakuang{
 	float:right;
 	height:100%;
 	width:30px;
@@ -90,32 +90,32 @@ a:hover{
 
 
 /*尾部*/
-.footer{
+.bc_navlistbar .footer{
 	overflow: hidden;
 	height:300px;
 	width:100%;
 	background: url("../images/nav_foot/bg-footer.jpg");
 }
-.foot_l{
+.bc_navlistbar .foot_l{
 	float:left;
 	width:15%;
 	text-align:center;
 	color:white;
 	margin-right:4%;
 }
-.foot_l h4{
+.bc_navlistbar .foot_l h4{
 	margin: 15% 0;
 }
-.foot_l a{
+.bc_navlistbar .foot_l a{
 	text-decoration: none;
 	color:white;
 	cursor:pointer;
 }
-.foot_l a:hover{
+.bc_navlistbar .foot_l a:hover{
 	color:#44be3f;
 }
 
-.foot_r{
+.bc_navlistbar .foot_r{
 	width: 21%;
 	float: right;
 	margin-top: 2%;
@@ -123,24 +123,24 @@ a:hover{
 	text-align: center;
 	color: white;
 }
-.foot_r > p{
+.bc_navlistbar .foot_r > p{
 	color: white;
 	font-weight: bold;
 	font-size:20px;
 }
-.foot_r1{
+.bc_navlistbar .foot_r1{
 	float:left;
 	width:45%;
 }
-.foot_r2{
+.bc_navlistbar .foot_r2{
 	float:right;
 	width:45%;
 }
-.foot_r > div > img{
+.bc_navlistbar .foot_r > div > img{
 	width:100%;
 	margin-bottom:10px;
 }
-.footer > p{
+.bc_navlistbar .footer > p{
 	clear:both;
 	text-align: center;
 	color:white;

@@ -8,7 +8,10 @@
 }
 
 
-
+.kfs_yi, .kfs_er, .kfs_san, .kfs_si, .kfs_wu{
+	padding: 0 50px;
+	box-sizing: border-box;
+}
 
 /*头*/
 .kfs_head{

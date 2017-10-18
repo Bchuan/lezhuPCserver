@@ -13,9 +13,11 @@
 .head_1 img{
 	width:100%;
 }
-.head_2,.head_3,.head_4{
+.head_2,.head_3,.head_4,.head_5,.head_6{
 	text-align: center;
 	overflow: hidden;
+	padding: 0 50px;
+	box-sizing: border-box;
 }
 .head_2 h1,.head_3 h1,.head_4 h1{
 	font-weight: 200;

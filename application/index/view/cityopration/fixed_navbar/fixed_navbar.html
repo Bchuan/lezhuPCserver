@@ -1,0 +1,86 @@
+<div class="fixed_navbar">
+	<ul>
+		<li>
+			<a href="#trademark_concept" name="trademark_concept" class="none">品牌概念</a>
+		</li>
+		<li>
+			<a href="#market_prospect" name="market_prospect" class="none">市场前景</a>
+		</li>
+		<li>
+			<a href="#why_select" name="why_select" class="bright">选择意义</a>
+		</li>
+		<li>
+			<a href="#lezhu_product" name="lezhu_product" class="none">乐住产品</a>
+		</li>
+		<li>
+			<a href="#tv_report" name="tv_report" class="none">媒体报道</a>
+		</li>
+		<li>
+			<a href="#profit_budget" name="profit_budget" class="none">盈利分析</a>
+		</li>
+		<li>
+			<a href="#welcome_join" name="welcome_join" class="none">人群分析</a>
+		</li>
+		<li>
+			<a href="#cooperation_relation" name="cooperation_relation" class="none">合作伙伴</a>
+		</li>
+		<li>
+			<a href="#cooperation_advantage" name="cooperation_advantage" class="none">加盟优势</a>
+		</li>
+		<li>
+			<a href="#cooperation_process" name="cooperation_process" class="none">加盟流程</a>
+		</li>
+	</ul>
+</div>
+
+<style type="text/css">
+	.fixed_navbar{
+		width: 100%;
+		height: 60px;
+		background: #49d075;
+		padding: 0px 20px;
+		box-sizing: border-box;
+		z-index: 100;
+	}
+	.fixed_navbar ul{
+		width: 100%;
+		overflow: hidden;
+	}
+	.fixed_navbar ul li{
+		float: left;
+		list-style: none;
+		line-height: 60px;
+		width: 10%;
+		text-align: center;
+		cursor: pointer;
+	}
+	.fixed_navbar ul li a{
+		display: block;
+		height: 60px;
+		color: white;
+		font-size: 16px;
+		text-decoration: none;
+	}
+	.fixed_navbar ul li:hover a{
+		background: #f0f9f1;
+		color: #333;
+	}
+	.fixedclass{
+		position: fixed;
+		top: 80px;
+	}
+</style>
+
+<script type="text/javascript">
+	var getBar=$('.fixed_navbar ul');
+	var getBartop=getBar.offset().top;
+	$(window).scroll(function(){
+		var H=$(document).scrollTop();
+		if(H>getBartop-80){
+			$('.fixed_navbar').addClass('fixedclass');
+		}
+		else{
+			$('.fixed_navbar').removeClass('fixedclass');
+		}
+	})
+</script>
