@@ -1,0 +1,132 @@
+<div class="tv_report">
+	<a id="tv_report" name="tv_report"></a>
+	<div class="zr_header">
+		<h1>央视等大型媒体报道</h1>
+		<p>乐住产品影响深远</p>
+		<div class="bar_bottom"></div>
+	</div>
+	<div class="video_container">
+		<ul>
+			<li>
+				<img src="__STATIC_PATH__/static/cityopration/images/video-image1.png"/>
+				<div class="one_p">
+					<p>“智慧小区 因你而来”</p>
+				</div>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/cityopration/images/video-image2.png"/>
+				<div class="one_p">
+					<p>中央13台《面对面》（乐住专访）</p>
+				</div>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/cityopration/images/video-image3.png"/>
+				<div class="one_p">
+					<p>中央7台《致富经》（乐住专访）</p>
+				</div>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/cityopration/images/video-image4.png"/>
+				<div class="one_p">
+					<p>“智慧小区”指导意见出台 开创物业管理新模式</p>
+				</div>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/cityopration/images/video-image5.png"/>
+				<div class="one_p">
+					<p> “互联网+小区”街头采访</p>
+				</div>
+			</li>
+			<li>
+				<img src="__STATIC_PATH__/static/cityopration/images/video-image6.png"/>
+				<div class="one_p">
+					<p>乐住智慧小区-湖南卫视新闻-社区生活装进手机里</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<style type="text/css">
+	/*头部*/
+	.tv_report {
+		padding: 0px 15px;
+		color: #3D3D3D;
+		position: relative;
+	}
+	.tv_report .zr_header{
+		padding: 60px 0px 40px 0px;
+		text-align: center;
+	}
+	.tv_report .zr_header h1{
+		font-weight: 500;
+		font-size: 36px
+	}
+	.tv_report .zr_header p{
+		font-size: 16px;
+	}
+	.tv_report .zr_header .bar_bottom{
+		width: 50px;
+		height: 2px;
+		background: #44b13f;
+		margin:auto;
+		margin-top: 15px;
+		transition: all 0.6s;
+	}
+	.tv_report .zr_header:hover .bar_bottom{
+		width: 80px;
+	}
+	/*视频容器*/
+	.tv_report .video_container ul{
+		width: 100%;
+		overflow: hidden;
+	}
+	.tv_report .video_container ul li{
+		float: left;
+		width: 30%;
+		height: 300px;
+		margin-right: 5%;
+		list-style: none;
+		cursor: pointer;
+		margin-bottom: 75px;
+		padding: 2px;
+		box-sizing: border-box;
+		transition: all 0.6s;
+		position: relative;
+	}
+	.tv_report .video_container ul li:hover .one_p p{
+		color: #49D075;
+	}
+	.tv_report .video_container ul li:hover{
+		padding: 0;
+	}
+	.tv_report .video_container ul li:hover img{
+		opacity: .95;
+	}
+	.tv_report .video_container ul li:nth-child(3n){
+		margin-right: 0;
+	}
+	.tv_report .video_container ul li img{
+		width: 100%;
+		border: 10px solid #dedede;
+		box-sizing: border-box;
+		border-radius: 5px;
+		transition: all 0.6s;
+	}
+	.tv_report .video_container ul li .one_p{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+	}
+	.tv_report .video_container ul li .one_p p{
+		text-align: center;
+		color: #3D3D3D;
+		line-height: 35px;
+	}
+	/*瞄点链接*/
+	.tv_report #tv_report{
+		position: absolute;
+		top: -140px;
+	}
+</style>
