@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:122:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\connectus\index.html";i:1508291207;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\head.html";i:1508299354;s:117:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\common\map.html";i:1508291207;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\foot.html";i:1508291207;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:122:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\connectus\index.html";i:1508291207;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\head.html";i:1508299354;s:117:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\common\map.html";i:1508291207;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\foot.html";i:1508299701;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -204,7 +204,7 @@
 			<img src="http://lezhu.tv/App/Tpl/Public/lzimg/download/sao.png" alt="">
 		</div>
 	</div>
-	
+	<div class="bc_navlistbar ">
 	<div class="footer"><!-- 底部 -->
 		<div class="foot_l">
 			<h4>产品简介</h4>
@@ -255,5 +255,7 @@
 		</div>
 		<p>copyright©2012-2108版权所有 乐住网络服务有限公司 湘ICP 备B2-20140080</p>
 	</div>
+</div>
+	
 </body>
 </html>

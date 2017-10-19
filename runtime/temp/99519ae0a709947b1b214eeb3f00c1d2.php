@@ -1,4 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:9:{s:122:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\advertise\index.html";i:1508297138;s:120:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\common\header.html";i:1508295703;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\head.html";i:1508299354;s:138:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\advertise\header_img\header_img.html";i:1508295563;s:138:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\advertise\why_select\why_select.html";i:1508295563;s:156:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\advertise\app_advertise_forms\app_advertise_forms.html";i:1508295563;s:168:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\advertise\app_advertise_publication\app_advertise_publication.html";i:1508295563;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\foot.html";i:1508291207;s:120:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\common\footer.html";i:1508295703;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:9:{s:122:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\advertise\index.html";i:1508316167;s:120:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\common\header.html";i:1508315103;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\head.html";i:1508299354;s:138:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\advertise\header_img\header_img.html";i:1508295563;s:138:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\advertise\why_select\why_select.html";i:1508384619;s:156:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\advertise\app_advertise_forms\app_advertise_forms.html";i:1508295563;s:168:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\advertise\app_advertise_publication\app_advertise_publication.html";i:1508295563;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\foot.html";i:1508299701;s:120:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\common\footer.html";i:1508295703;}*/ ?>
+<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 <!--引入公共头部-->
 <!DOCTYPE html>
 <html>
@@ -133,7 +134,7 @@
 		list-style: none;
 		float: left;
 		width: 48%;
-		height: 580px;
+		height: 590px;
 		font-size: 20px;
 	}
 	.why_select ul li:nth-child(1),.why_select ul li:nth-child(3){
@@ -318,7 +319,7 @@
 </style>
 
 <!--引入公共导航尾部-->
-
+<div class="bc_navlistbar ">
 	<div class="footer"><!-- 底部 -->
 		<div class="foot_l">
 			<h4>产品简介</h4>
@@ -369,6 +370,8 @@
 		</div>
 		<p>copyright©2012-2108版权所有 乐住网络服务有限公司 湘ICP 备B2-20140080</p>
 	</div>
+</div>
+	
 
 <!--引入公共尾部-->
 
