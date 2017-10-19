@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:18:{s:88:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\index.html";i:1508311432;s:83:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\common\header.html";i:1508310960;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\head.html";i:1508310960;s:104:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\header_img\header_img.html";i:1508310960;s:108:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\fixed_navbar\fixed_navbar.html";i:1508310960;s:118:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\trademark_concept\trademark_concept.html";i:1508310960;s:114:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\market_prospect\market_prospect.html";i:1508310960;s:104:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\why_select\why_select.html";i:1508310960;s:110:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\lezhu_product\lezhu_product.html";i:1508310960;s:102:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\tv_report\tv_report.html";i:1508310960;s:110:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\profit_budget\profit_budget.html";i:1508310960;s:108:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\welcome_join\welcome_join.html";i:1508310960;s:124:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\cooperation_relation\cooperation_relation.html";i:1508310960;s:126:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\cooperation_advantage\cooperation_advantage.html";i:1508310960;s:122:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\cooperation_process\cooperation_process.html";i:1508310960;s:104:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\change_bar\change_bar.html";i:1508310960;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\foot.html";i:1508310960;s:83:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\common\footer.html";i:1508310960;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:18:{s:88:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\index.html";i:1508315837;s:83:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\common\header.html";i:1508310960;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\head.html";i:1508310960;s:104:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\header_img\header_img.html";i:1508310960;s:108:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\fixed_navbar\fixed_navbar.html";i:1508310960;s:118:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\trademark_concept\trademark_concept.html";i:1508310960;s:114:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\market_prospect\market_prospect.html";i:1508310960;s:104:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\why_select\why_select.html";i:1508310960;s:110:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\lezhu_product\lezhu_product.html";i:1508310960;s:102:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\tv_report\tv_report.html";i:1508310960;s:110:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\profit_budget\profit_budget.html";i:1508315902;s:108:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\welcome_join\welcome_join.html";i:1508310960;s:124:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\cooperation_relation\cooperation_relation.html";i:1508310960;s:126:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\cooperation_advantage\cooperation_advantage.html";i:1508315818;s:122:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\cooperation_process\cooperation_process.html";i:1508310960;s:104:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\change_bar\change_bar.html";i:1508316041;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\foot.html";i:1508310960;s:83:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\common\footer.html";i:1508310960;}*/ ?>
 <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 <!--引入公共头部-->
 <!DOCTYPE html>
@@ -694,6 +694,9 @@
 
 <style type="text/css">
 	/*头部*/
+	th{
+		text-align: center;
+	}
 	.profit_budget{
 		background: url('__STATIC_PATH__/static/cityopration/images/brand-bg3.jpg') center no-repeat;
 		width: 100%;
@@ -1095,6 +1098,9 @@
 
 <style type="text/css">
 	/*头部*/
+	p{
+		margin-bottom: 0;
+	}
 	.cooperation_advantage{
 		color: #3D3D3D;
 		padding: 0px 15px;
@@ -1288,9 +1294,9 @@
 </style>
 
 <!--引入滑动改变导航条高亮-->
-<div class="change_bar">
+<!-- <div class="change_bar">
 	<p>滑动改变导航条高亮</p>
-</div>
+</div> -->
 
 <script type="text/javascript">
 	var barH1=$('.trademark_concept').offset().top;

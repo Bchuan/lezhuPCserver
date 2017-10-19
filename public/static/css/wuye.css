@@ -13,7 +13,7 @@
 .head_1 img{
 	width:100%;
 }
-.head_2,.head_3,.head_4,.head_5,.head_6{
+.head_2, .head_3, .head_4, .head_5, .head_6{
 	text-align: center;
 	overflow: hidden;
 	padding: 0 50px;
