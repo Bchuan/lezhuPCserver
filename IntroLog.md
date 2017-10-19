@@ -52,3 +52,21 @@
 
 
 
+10.19 11：50   by  ZR
+
+修改视图（application》index》view》productintro》vue_store》vue_store.html）:去掉路由，修复了vue_store的vue路由被导航条冲突问题；
+——————————（application》index》view》productintro》vue_internet》vue_internet.html），
+——————————（application》index》view》productintro》vue_internetpic》vue_internetpic.html）修改了vue_internet和vue_internetpic中一些样式，解决在其他显示器显示效果不好问题；
+
+修改视图（application》index》view》cityopration》market_prospect》market_prospect.html）：修改了market_prospect中2个圆形图片部分，解决在其他显示器显示效果不好问题；
+——————————（application》index》view》cityopration》profit_budget》profit_budget.html）：给里面表单的th设置文字居中样式，来修改了bootstrap中th默认向左的样式
+——————————（application》index》view》cityopration》cooperation_advantage》cooperation_advantage.html）：给里面单个盒子中的p设置margin为0，来修改了bootstrap中p默认margin-bottom为10的样式
+
+修改视图（application》index》view》advertise》why_select》why_select.html）：修改了一下里面盒子的样式，让界面更美观点
+
+更改基本资源配置路径 （application》config.php》 'view_replace_str' ）:增加了2条路径，以后如果有人要用，直接注释某一条，用完再弄回去，减少每次都要修改本条冲突
+
+修改开发者日记（IntroLog.md）：增加 10.19 11：50 by ZR 这条
+
+
+

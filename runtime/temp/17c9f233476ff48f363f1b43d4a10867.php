@@ -1,4 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:11:{s:125:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\companyintro\index.html";i:1508298099;s:120:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\common\header.html";i:1508295703;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\head.html";i:1508299354;s:141:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\companyintro\header_img\header_img.html";i:1508295563;s:141:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\companyintro\know_lezhu\know_lezhu.html";i:1508295563;s:147:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\companyintro\know_lezhupic\know_lezhupic.html";i:1508295563;s:149:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\companyintro\company_course\company_course.html";i:1508295563;s:155:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\companyintro\company_coursepic\company_coursepic.html";i:1508295563;s:159:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\companyintro\software_show_lunbo\software_show_lunbo.html";i:1508295563;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\foot.html";i:1508291207;s:120:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\common\footer.html";i:1508295703;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:11:{s:125:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\companyintro\index.html";i:1508316167;s:120:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\common\header.html";i:1508315103;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\head.html";i:1508299354;s:141:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\companyintro\header_img\header_img.html";i:1508295563;s:141:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\companyintro\know_lezhu\know_lezhu.html";i:1508295563;s:147:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\companyintro\know_lezhupic\know_lezhupic.html";i:1508295563;s:149:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\companyintro\company_course\company_course.html";i:1508295563;s:155:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\companyintro\company_coursepic\company_coursepic.html";i:1508295563;s:159:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\companyintro\software_show_lunbo\software_show_lunbo.html";i:1508295563;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\foot.html";i:1508299701;s:120:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\common\footer.html";i:1508295703;}*/ ?>
+<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 <!--引入公共头部-->
 <!DOCTYPE html>
 <html>
@@ -405,7 +406,7 @@
 
 
 <!--引入公共导航尾部-->
-
+<div class="bc_navlistbar ">
 	<div class="footer"><!-- 底部 -->
 		<div class="foot_l">
 			<h4>产品简介</h4>
@@ -456,6 +457,8 @@
 		</div>
 		<p>copyright©2012-2108版权所有 乐住网络服务有限公司 湘ICP 备B2-20140080</p>
 	</div>
+</div>
+	
 
 <!--引入公共尾部-->
 
