@@ -1,4 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:18:{s:125:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\index.html";i:1508297320;s:120:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\common\header.html";i:1508295703;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\head.html";i:1508299354;s:141:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\header_img\header_img.html";i:1508295563;s:145:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\fixed_navbar\fixed_navbar.html";i:1508297957;s:155:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\trademark_concept\trademark_concept.html";i:1508295563;s:151:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\market_prospect\market_prospect.html";i:1508297455;s:141:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\why_select\why_select.html";i:1508297704;s:147:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\lezhu_product\lezhu_product.html";i:1508297626;s:139:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\tv_report\tv_report.html";i:1508297669;s:147:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\profit_budget\profit_budget.html";i:1508297646;s:145:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\welcome_join\welcome_join.html";i:1508297687;s:161:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\cooperation_relation\cooperation_relation.html";i:1508297578;s:163:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\cooperation_advantage\cooperation_advantage.html";i:1508297519;s:159:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\cooperation_process\cooperation_process.html";i:1508297547;s:141:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\change_bar\change_bar.html";i:1508295563;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\foot.html";i:1508291207;s:120:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\common\footer.html";i:1508295703;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:18:{s:125:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\index.html";i:1508316167;s:120:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\common\header.html";i:1508315103;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\head.html";i:1508299354;s:141:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\header_img\header_img.html";i:1508295563;s:145:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\fixed_navbar\fixed_navbar.html";i:1508297957;s:155:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\trademark_concept\trademark_concept.html";i:1508295563;s:151:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\market_prospect\market_prospect.html";i:1508384191;s:141:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\why_select\why_select.html";i:1508297704;s:147:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\lezhu_product\lezhu_product.html";i:1508297626;s:139:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\tv_report\tv_report.html";i:1508297669;s:147:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\profit_budget\profit_budget.html";i:1508384293;s:145:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\welcome_join\welcome_join.html";i:1508297687;s:161:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\cooperation_relation\cooperation_relation.html";i:1508297578;s:163:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\cooperation_advantage\cooperation_advantage.html";i:1508384365;s:159:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\cooperation_process\cooperation_process.html";i:1508297547;s:141:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\cityopration\change_bar\change_bar.html";i:1508295563;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\foot.html";i:1508299701;s:120:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\common\footer.html";i:1508295703;}*/ ?>
+<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 <!--引入公共头部-->
 <!DOCTYPE html>
 <html>
@@ -319,13 +320,14 @@
 		float: left;
 		overflow: hidden;
 		margin-top: 50px;
+		margin-left: 3%;
 	}
 	.market_prospect .word_img .two_img .one_img{
 		float: left;
 		position: relative;
 		width: 230px;
 		height: 230px;
-		margin-left: 60px;
+		margin-left: 0px;
 	}
 	.market_prospect .word_img .two_img .one_img img{
 		border-radius: 50%;
@@ -745,6 +747,7 @@
 	}
 	.profit_budget .set_padding .form_show table tr th{
 		width: 25%;
+		text-align: center;
 	}
 	/*瞄点链接*/
 	.profit_budget #profit_budget{
@@ -1164,6 +1167,7 @@
 	.cooperation_advantage .container ul li .many_p p{
 		font-size: 14px;
 		line-height: 20px;
+		margin: 0;
 	}
 	/*瞄点链接*/
 	.cooperation_advantage #cooperation_advantage{
@@ -1353,7 +1357,7 @@
 </script>
 
 <!--引入公共导航尾部-->
-
+<div class="bc_navlistbar ">
 	<div class="footer"><!-- 底部 -->
 		<div class="foot_l">
 			<h4>产品简介</h4>
@@ -1404,6 +1408,8 @@
 		</div>
 		<p>copyright©2012-2108版权所有 乐住网络服务有限公司 湘ICP 备B2-20140080</p>
 	</div>
+</div>
+	
 
 <!--引入公共尾部-->
 
