@@ -163,9 +163,12 @@
 .kfs_Pic2 li{
 	list-style: none;
 	float: left;
-	width: 14%;
-	margin-right: 0.28651%;
+	width: 13%;
+	margin-right: 1.5%;
 	text-align: center;
+}
+.kfs_Pic2 li:nth-child(7){
+	margin-right: 0;
 }
 .kfs_Pic2 li p{
 	margin-top: 10px;
