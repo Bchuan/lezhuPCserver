@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:120:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\develop\index.html";i:1508291207;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\head.html";i:1508299354;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:120:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\develop\index.html";i:1508463758;s:118:"E:\Tools\wampserver3.0.6\program\wamp64\www\lezhu_pc\2\lezhuPCserver\public/../application/index\view\public\head.html";i:1508299354;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +9,7 @@
 	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> 
  	<script src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js"></script>
 	<title>开发商合作</title>
-	<link type="text/css" rel="stylesheet" href="__STATICPATH__/static/css/kaifashanghezuo.css" />
+	<link type="text/css" rel="stylesheet" href="__STATICPATH__/static/css/kaifashanghezuo.css?a" />
 </head>
 <body>
 	

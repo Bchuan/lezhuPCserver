@@ -70,3 +70,18 @@
 
 
 
+10.20 10:00   by  ZR
+
+修改视图（application》index》view》cityopration》tv_report》tv_report.html）:修改了一个bootstrap自带的margin-bottom属性造成的浮动
+——————————（application》index》view》cityopration》market_prospect》market_prospect.html）：清除浮动
+——————————（application》index》view》cityopration》cooperation_advantage》cooperation_advantage.html）：给里面单个盒子中的p设置margin为0，来修改了bootstrap中p默认margin-bottom为10的样式
+
+修改css样式（public》static》css》kaifashanghezuo.css）：7个盒子用百分比在不同屏幕4舍5入造成的小数使一个盒子下滑，改成了比较精确的小数，解决了下滑问题
+
+更改基本资源配置路径 （application》index》view》develop》index.html ）:谷歌浏览器缓存问题，调试的时候改了一下路径
+
+调试视图（application》index》view》cityopration》change_bar》change_bar.html）：调试了一下这个页面的导航条存在的bug，还没解决
+
+修改开发者日记（IntroLog.md）：增加 10.20 10：00 by ZR 这条
+
+
