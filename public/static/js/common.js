@@ -40,7 +40,6 @@ function browserRedirect() {
 	} else { 
 		console.log('pc')
 		// window.location= '电脑网站地址'; 
-
 	} 
 
 } 
