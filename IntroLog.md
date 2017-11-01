@@ -70,3 +70,33 @@
 
 
 
+10.20 10:00   by  ZR
+
+修改视图（application》index》view》cityopration》tv_report》tv_report.html）:修改了一个bootstrap自带的margin-bottom属性造成的浮动
+——————————（application》index》view》cityopration》market_prospect》market_prospect.html）：清除浮动
+——————————（application》index》view》cityopration》cooperation_advantage》cooperation_advantage.html）：给里面单个盒子中的p设置margin为0，来修改了bootstrap中p默认margin-bottom为10的样式
+
+修改css样式（public》static》css》kaifashanghezuo.css）：7个盒子用百分比在不同屏幕4舍5入造成的小数使一个盒子下滑，改成了比较精确的小数，解决了下滑问题
+
+更改基本资源配置路径 （application》index》view》develop》index.html ）:谷歌浏览器缓存问题，调试的时候改了一下路径
+
+调试视图（application》index》view》cityopration》change_bar》change_bar.html）：调试了一下这个页面的导航条存在的bug，还没解决
+
+修改开发者日记（IntroLog.md）：增加 10.20 10：00 by ZR 这条
+
+
+
+11.1 16:44  by  BC
+
+pc视图进行了数据绑定（application》index）：newslist(新闻动态)，newsdata(新闻详情)，companyintro(企业简介);
+	对应控制器：Newslist,Newsdata,Companyintro添加数据库读取相应的数据。
+
+添加手机端页面：所有。其中newslist(新闻动态)，newsdata(新闻详情)进行了数据绑定。
+
+新建数据库lezhu（导入文件在根目录）: 
+	表有：lz_company_intro（公司简介），lz_history（公司发展历史），lz_news（新闻列表）
+
+添加后台（application》admin）：添加新闻，新闻列表管理，企业简介管理，企业简介编辑，公司历程添加;
+	添加对应控制器、对应模型以及对应验证器进行数据操作。
+
+添加common.js/m_common.js（公共资源目录）进行手机端与PC端之间的切换
