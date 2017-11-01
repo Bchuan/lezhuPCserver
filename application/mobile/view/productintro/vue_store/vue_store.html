@@ -1,0 +1,327 @@
+<div id="vue_store">
+	<div class="vue_store">
+		<h1>智慧小区体验馆 为服务助力</h1>
+		<div class="vue_store_header">
+			<ul>
+				<li v-on:click='changeStoreHead(1)' v-bind:class='{cur_menu:changeStoreNum_head==1}'>智能道闸</li>
+				<li v-on:click='changeStoreHead(2)' v-bind:class='{cur_menu:changeStoreNum_head==2}'>安全门禁</li>
+				<li v-on:click='changeStoreHead(3)' v-bind:class='{cur_menu:changeStoreNum_head==3}'>自助售货机</li>
+				<li v-on:click='changeStoreHead(4)' v-bind:class='{cur_menu:changeStoreNum_head==4}'>汽车充电桩</li>
+				<li v-on:click='changeStoreHead(5)' v-bind:class='{cur_menu:changeStoreNum_head==5}'>自助洗车</li>
+				<li v-on:click='changeStoreHead(6)' v-bind:class='{cur_menu:changeStoreNum_head==6}'>自助快递柜</li>
+				<li v-on:click='changeStoreHead(7)' v-bind:class='{cur_menu:changeStoreNum_head==7}'>自助缴费终端</li>
+			</ul>
+		</div>
+		<div class="vue_store_container">
+			<div class="signoHtml" v-if='changeStoreNum_head==1'>
+				<div class="img_phone">
+					<img src="__STATIC_PATH__/static/productintro/images/product1.png"/>
+				</div>
+				<div class="many_p">
+					<div class="two_p">
+						<p>1.智能识别功能</p>
+						<p>自动识别车辆的车牌号码，并录入车辆管理系统</p>
+					</div>
+					<div class="two_p">
+						<p>2.费用计算功能</p>
+						<p>停车周期交费,临时停车交费,费用到期提醒功能,支持多种方式在线支付</p>
+					</div>
+					<div class="two_p">
+						<p>3.车辆进出记录</p>
+						<p>对车辆的出入时间进行记录</p>
+					</div>
+					<div class="two_p">
+						<p>4.停车指引功能</p>
+						<p>APP显示空闲车位并导航 (增配地磁感应设备，建议用于商业停车场）</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="accessHtml" v-if='changeStoreNum_head==2'>
+				<div class="img_phone">
+					<img src="__STATIC_PATH__/static/productintro/images/product2.png"/>
+				</div>
+				<div class="many_p">
+					<div class="two_p">
+						<p>1.业主开关门</p>
+						<p>门禁卡开门</p>
+					</div>
+					<div class="two_p">
+						<p>门禁密码开门：手机”摇一摇”开门，手机“点击”开门，WIFI连接开门</p>
+					</div>
+					<div class="two_p">
+						<p>2.访客开门</p>
+						<p>访客输入数字密码开门,二维码扫码开门,门禁记录开门</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="vemHtml" v-if='changeStoreNum_head==3'>
+				<div class="img_phone">
+					<img src="__STATIC_PATH__/static/productintro/images/product3.png"/>
+				</div>
+				<div class="many_p">
+					<div class="two_p">
+						<p>通过手机APP进行扫码支付购物费用，进行线下自助售货交易。</p>
+					</div>
+					<div class="two_p">
+						<p>1、支持市面主流支付方式例：乐住支付、银联支付、银联闪付、微信、支付宝、现金、一卡通等；</p>
+					</div>
+					<div class="two_p">
+						<p>2、支持线上线下各种营销活动；</p>
+					</div>
+					<div class="two_p">
+						<p>3、自助售货机商品种类、数量、价格查询；</p>
+					</div>
+					<div class="two_p">
+						<p>4、自助售货机位置查询。</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="chargingpileHtml" v-if='changeStoreNum_head==4'>
+				<div class="img_phone">
+					<img src="__STATIC_PATH__/static/productintro/images/product4.png"/>
+				</div>
+				<div class="many_p">
+					<div class="two_p">
+						<p>1.GPS定位功能：APP查看小区内的充电桩设备的位置</p>
+					</div>
+					<div class="two_p">
+						<p>2.设备使用状态查看功能</p>
+					</div>
+					<div class="two_p">
+						<p>3.费用计算功能：APP自动计算出本次充电费用</p>
+					</div>
+					<div class="two_p">
+						<p>4.支付功能：乐住支付、微信、支付宝、银联支付</p>
+					</div>
+					<div class="two_p">
+						<p>5.APP提醒功能：通过APP设置单次充电时间，充电结束自动提醒</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="washcarHtml" v-if='changeStoreNum_head==5'>
+				<div class="img_phone">
+					<img src="__STATIC_PATH__/static/productintro/images/product5.png"/>
+				</div>
+				<div class="many_p">
+					<div class="two_p">
+						<p>1.GPS定位功能：APP查看小区内自助洗车设备位置</p>
+					</div>
+					<div class="two_p">
+						<p>2.设备使用状态查看功能</p>
+					</div>
+					<div class="two_p">
+						<p>3.费用计算功能：APP自动计算出本次充电费用</p>
+					</div>
+					<div class="two_p">
+						<p>4.支付功能：乐住支付、微信、支付宝、银联支付</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="deliveryHtml" v-if='changeStoreNum_head==6'>
+				<div class="img_phone">
+					<img src="__STATIC_PATH__/static/productintro/images/product6.png"/>
+				</div>
+				<div class="many_p">
+					<div class="two_p">
+						<p>1.有件到时乐住提醒有快件到达</p>
+					</div>
+					<div class="two_p">
+						<p>2.通过乐住快件取键码打开自助收件柜</p>
+					</div>
+					<div class="two_p">
+						<p>3.定位功能，安装快递柜的地方可通过GPS定位</p>
+					</div>
+					<div class="two_p">
+						<p>4.还可自助邮寄快递，方便快捷，物业可赚取服务费</p>
+					</div>
+					<div class="two_p">
+						<p>5.电子显示屏增设广告位，可提升物业营收</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="payserviceHtml" v-if='changeStoreNum_head==7'>
+				<div class="img_phone">
+					<img src="__STATIC_PATH__/static/productintro/images/product7.png"/>
+				</div>
+				<div class="many_p">
+					<div class="two_p">
+						<p>1.银联便民支付，拥有银联支付的安全保障；</p>
+					</div>
+					<div class="two_p">
+						<p>2.支持便民缴费等多种功能： 公共事业缴费如水费、电费、燃气费等；本省话费缴费、全国手机直充；银行卡查余等常用便民功能；信用卡还款等；</p>
+					</div>
+					<div class="two_p">
+						<p>3.其他待开通功能：根据政务开放实际情况等，如办理民政类事务、社会保险等电子政务办理。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<script type="text/javascript">
+	new Vue({
+		el:'#vue_store',
+		data:{
+			changeStoreNum_head:1
+		},
+		methods:{
+			changeStoreHead:function(num){
+				this.changeStoreNum_head=num;
+			}
+		}
+	});
+</script>
+
+<!--头部style-->
+<style type="text/css">
+	body{
+		background: #f5f5fc;
+	}
+	.vue_store{
+		margin: 0px;
+		padding: 0px 15px;
+		list-style: none;
+		padding-top: 30px;
+		background: white;
+	}
+	.vue_store h1{
+		font-size: 18px;
+		text-align: center;
+		color: #49d075;
+		width: 145px;
+		font-weight: 200;
+		margin: 0 auto;
+	}
+	.vue_store ul{
+		overflow: hidden;
+		margin-top: 20px;
+	}
+	.vue_store ul li{
+		width: 20.5%;
+		height: 30px;
+		text-align: center;
+		float: left;
+		list-style: none;
+		line-height: 30px;
+		font-size: 14px;
+		margin-right: 6%;
+		color: #333333;
+	}
+	.vue_store ul li:nth-child(4){
+		margin-right: 0;
+	}
+	.vue_store ul .cur_menu{
+		background: #49d075;
+		color: #FFFFFF;
+	}
+	.vue_store .vue_store_container{
+		padding: 20px 2% 35px 2%;		
+		font-size: 14px;
+		color: #3D3D3D;
+	}
+	.vue_store .vue_store_container .img_phone img{
+		width: 100%;
+	}
+	.vue_store .vue_store_container .many_p .two_p{
+		margin-top: 22px;
+	}
+</style>
+<!--signoHtml部分style-->
+<style type="text/css">
+	.signoHtml {
+		
+	}
+	.signoHtml .img_phone img{
+		width: 100%;
+	}
+	.signoHtml .many_p .two_p{
+		margin-top: 22px;
+	}
+	@media (max-width:640px){
+		.vue_store h1{
+			font-size: 15px;
+			width: 120px;
+		}
+		.vue_store ul li{
+			height: 23px;
+			line-height: 23px;
+			font-size: 14px;
+			width: 28%;
+			margin-right: 8%;
+		}
+		.vue_store ul li:nth-child(3n){
+			margin-right: 0;
+		}
+		.vue_store ul li:nth-child(4){
+			margin-right: 8%;
+		}
+		.signoHtml .many_p .two_p{
+			margin-top: 18px;
+		}
+		.vue_store .vue_store_container .many_p .two_p{
+			margin-top: 18px;
+		}
+	}
+	@media (min-width:960px) and (max-width:1280px){
+		.vue_store{
+			padding-top: 45px;
+		}
+		.vue_store h1{
+			font-size: 22px;
+			width: 160px;
+		}
+		.vue_store ul{
+			margin-top: 30px;
+		}
+		.vue_store .vue_store_container{
+			margin-top: 20px;
+			font-size: 16px;
+		}
+		.vue_store ul li{
+			height: 30px;
+			line-height: 30px;
+			font-size: 18px;
+		}
+		.signoHtml .many_p .two_p{
+			margin-top: 18px;
+		}
+		.vue_store .vue_store_container .many_p .two_p{
+			margin-top: 18px;
+		}
+	}
+	@media (min-width:1280px){
+		.vue_store{
+			padding-top: 50px;
+		}
+		.vue_store h1{
+			font-size: 26px;
+			width: 185px;
+		}
+		.vue_store ul{
+			margin-top: 35px;
+		}
+		.vue_store .vue_store_container{
+			margin-top: 20px;
+			font-size: 18px;
+		}
+		.vue_store ul li{
+			height: 33px;
+			line-height: 33px;
+			font-size: 19px;
+			margin-bottom: 3px;
+		}
+		.signoHtml .many_p .two_p{
+			margin-top: 18px;
+		}
+		.vue_store .vue_store_container .many_p .two_p{
+			margin-top: 18px;
+		}
+	}
+</style>

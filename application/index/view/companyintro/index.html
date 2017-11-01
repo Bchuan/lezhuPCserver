@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<script src="__STATICPATH__/static/js/common.js"></script>
 <!--引入公共头部-->
 {include file="common/header"}
 
@@ -9,13 +10,290 @@
 {include file="companyintro/header_img/header_img"}
 
 <!--引入认识乐住模块-->
-{include file="companyintro/know_lezhu/know_lezhu"}
+<style type="text/css">
+.know_lezhu {
+    width: 1280px;
+    margin: auto;
+}
+
+.know_lezhu h1 {
+    padding-left: 20px;
+    border-left: 6px solid #49d074;
+    font-size: 30px;
+    height: 33px;
+    line-height: 33px;
+    margin-bottom: 45px;
+}
+
+.know_lezhu .many_p {
+    color: #777;
+    font-size: 16px;
+}
+
+.know_lezhu .many_p p {
+    margin-bottom: 50px;
+    line-height: 22px;
+}
+
+.know_lezhu .many_p span {
+    display: inline-block;
+    margin: 40px 0;
+}
+
+.know_lezhu .many_p img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* media 1280 */
+
+@media screen and (max-width:1280px) {
+    .know_lezhu {
+        width: 960px;
+    }
+    .know_lezhu .many_p{
+        padding:0 25px;
+    }
+}
+
+/* media 960 */
+@media screen and (max-width:960px) {
+    .know_lezhu {
+        width: 100%;
+    }
+    .know_lezhu .many_p{
+        padding:0 25px;
+    }
+}
+
+/* media 640 */
+@media screen and (max-width:640px) {
+    .know_lezhu {
+        width: 100%;
+    }
+    .know_lezhu .many_p{
+        padding:0 25px;
+    }
+}
+</style>
+
+<div class="know_lezhu">
+    <h1>认识乐住</h1>
+    <div class="many_p"> 
+    	{$intro_content.intro_content}
+</div>
+
+{/*include file="companyintro/know_lezhu/know_lezhu"*/}
 
 <!--引入认识乐住pic模块-->
-{include file="companyintro/know_lezhupic/know_lezhupic"}
+{/*include file="companyintro/know_lezhupic/know_lezhupic"*/}
 
 <!--引入认识公司历程模块-->
-{include file="companyintro/company_course/company_course"}
+<div class="course">
+	<div class="company_course">
+    <h1>公司历程</h1>
+    <ul>
+       {foreach $history_list as $keys=>$value}
+       	{if $keys%2 == 0 }
+        <li>
+            <div class="img_left">
+                <img src="__STATIC_PATH__/static/companyintro/images/{$value.time_year}.png" />
+            </div>
+            <div class="img_right">
+                <div class="h4_p">
+                    <h4>{$value.time_year}</h4>
+                    <p>{$value.content}</p>
+                </div>
+            </div>
+        </li>
+		{else $keys%2 == 1}
+        <li>
+            <div class="img_right">
+
+                <div class="h4_p">
+                     <h4>{$value.time_year}</h4>
+                    <p>{$value.content}</p>
+                </div>
+            </div>
+            <div class="img_left">
+                <img src="__STATIC_PATH__/static/companyintro/images/{$value.time_year}.png" />
+            </div>
+        </li>
+        {/if}
+        {/foreach}
+    </ul>
+</div>
+</div>
+
+<style type="text/css">
+img {
+    width: 90%;
+}
+
+.course {
+    background: #f4f4f4;
+    width: 100%;
+    overflow: hidden;
+}
+
+.company_course {
+    width: 1280px;
+    margin: auto;
+}
+
+.company_course h1 {
+    padding-left: 20px;
+    font-weight: bold;
+    border-left: 6px solid #49d074;
+    font-size: 30px;
+    height: 33px;
+    line-height: 33px;
+    margin-bottom: 45px;
+}
+
+.company_course ul li {
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 65px;
+}
+
+.company_course ul li .img_left {
+    float: left;
+    width: 18%;
+}
+
+
+/*.company_course ul li .img_left img {
+	margin-left: 20px;
+}*/
+
+.company_course ul li .img_right {
+    background: url('__STATIC_PATH__/static/companyintro/images/left.png') no-repeat;
+    height: 196px;
+    float: left;
+    width: 65%;
+}
+
+.company_course ul li:nth-child(2n) .img_right {
+    background: url('__STATIC_PATH__/static/companyintro/images/right.png') no-repeat;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.company_course ul li:nth-child(2n-1) .img_left {
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+.company_course ul li .img_right .h4_p {
+    padding: 45px 65px;
+}
+
+.company_course ul li .img_right .h4_p h4 {
+    color: #49d075;
+    font-size: 20px
+}
+
+.company_course ul li .img_right .h4_p p {
+    margin-top: 25px;
+    color: #777;
+    font-size: 16px;
+}
+
+.company_course ul li .img_right:hover .h4_p p {
+    color: #49d075;
+}
+
+
+/* media 1280 */
+
+@media screen and (max-width:1280px) {
+    .company_course {
+        width: 960px;
+    }
+
+    .company_course h1 {
+        font-size: 26px;
+        margin: 20px 0;
+    }
+
+    .company_course ul li {
+        margin-bottom: 30px;
+    }
+
+    .company_course ul li .img_right .h4_p p {
+        font-size: 14px;
+    }
+    .company_course ul li .img_right .h4_p h4 {
+        margin: 0px;
+    }
+    .company_course ul li .img_right .h4_p p {
+        margin-top: 12px;
+        font-size: 14px;
+    }
+    .company_course ul li .img_right .h4_p {
+        padding: 45px;
+    }
+}
+
+
+/* media 960 */
+
+@media screen and (max-width:960px) {
+    .company_course {
+        width: 100%;
+    }
+
+    .company_course h1 {
+        font-size: 26px;
+        margin: 20px 0;
+    }
+
+    .company_course ul li {
+        margin-bottom: 30px;
+    }
+
+    .company_course ul li .img_left,
+    .company_course ul li .img_right {
+        height: 155px;
+    }
+
+    .company_course ul li .img_right .h4_p p {
+        font-size: 14px;
+    }
+    .company_course ul li .img_right .h4_p h4 {
+        margin: 0px;
+    }
+    .company_course ul li .img_right .h4_p p {
+        margin-top: 12px;
+        font-size: 14px;
+    }
+    .company_course ul li .img_right .h4_p {
+        padding: 30px 30px 30px 70px;
+    }
+    .company_course ul li:nth-child(2n) .img_left img {
+        width: 100%;
+    }
+
+    .company_course ul li:nth-child(2n-1) .img_left img {
+        width: 100%;
+    }
+}
+
+
+/* media 640 */
+
+@media screen and (max-width:640px) {
+    .company_course ul li .img_right .h4_p {
+        padding: 20px 20px 20px 50px;
+    }
+    .company_course ul li .img_right .h4_p p {
+        margin-top: 8px;
+        font-size: 12px;
+    }
+}
+</style>
+{/*include file="companyintro/company_course/company_course"*/}
 
 <!--引入认识公司历程pic模块-->
 {include file="companyintro/company_coursepic/company_coursepic"}

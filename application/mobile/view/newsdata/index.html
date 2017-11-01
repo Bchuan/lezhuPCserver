@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="Content-Language" content="zh-cn" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> 
+ 	<script src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js"></script>
+	<title>新闻详情</title>
+	<link type="text/css" rel="stylesheet" href="__STATICPATH__/static/css/xwxiangqing.css" />
+<body>
+	{include file="/public/head"}
+	<div class="xinwen">
+		<div class="xw_head">
+			<img src="__STATICPATH__/static/images/newsdeta/xinwen02.png" alt="">
+			<span>新闻动态</span>
+		</div>
+		<div class="wenzhang"> <!-- 文章 -->
+			<h3>{$content_list.title}</h3>
+			<p>点击数：<span>{$content_list.visited}</span>&nbsp;&nbsp;&nbsp;&nbsp;发布日期：<span>{$content_list.create_time|date='Y-m-s',###}</span></p>
+			<div class="main_01"> <!-- 文章主体 -->
+				{$content_list.content}
+			</div>
+			<div class="index_page">
+				<div class="prepage">
+					上一篇：
+					<a href="{:url('/index/newsdata/index',['id'=>($last['id'])])}">{$prev.title}
+					</a>
+				</div>
+				<div class="nextpage">
+					下一篇:
+					<a href="{:url('/index/newsdata/index',['id'=>($last['id'])])}">{$last.title}
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	{include file="/public/foot"}
+</body>
+</html>

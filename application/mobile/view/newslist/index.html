@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="Content-Language" content="zh-cn" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script src="__STATICPATH__/static/js/m_common.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> 
+ 	<script src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js"></script>
+	<title>新闻动态</title>
+	<link type="text/css" rel="stylesheet" href="__STATICPATH__/static/m_css/xwdongtai.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+	<script type="text/javascript" src="__STATICPATH__/static/js/xwdongtai.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+</head>
+ <body>
+	{include file="/public/head"}
+	<div class="xinwen">
+		<div class="xw_head">
+			<img src="__STATICPATH__/static/images/newslist/xinwen02.png" alt="">
+			<span>新闻动态</span>
+		</div>
+		
+		<div class="lunbo"> <!-- 轮播图 -->
+				<div class="swiper-container">
+					<div class="swiper-button-prev swiper-button-black"></div>
+   					<div class="swiper-wrapper">
+   						{foreach $swiper_list as $value}
+     		   		 	<div class="swiper-slide">
+     		   		 		<a href="{:url('newsdata/index',['id'=>$value['id']])}">
+	     		   		 		<h3>{$value.title}</h3>
+								<p>文章来源&nbsp;&nbsp;&nbsp;发布日期：{$value.create_time|date='Y-m-s',###}</p>
+	     		   		 		<img src="__STATICPATH__/static/images/newslist/xinwen03.png" alt="">
+	     		   		 		<p class="neirong">{$value.short_content|mb_substr=0,30}...</p>
+     		   		 		</a>
+     		   		 	</div>
+     		   		 	{/foreach}
+      		    	</div>
+      		   		<div class="swiper-button-next swiper-button-black"></div>
+  				</div>
+		</div>
+		<div class="xiangqing"> <!-- 论坛 -->
+			<ul>
+				{foreach $news_list as $value}
+				<li>
+					<a href="{:url('newsdata/index',['id'=>$value['id']])}" class="new_list_title">
+						<div class="xq_l">
+							<img src="__STATICPATH__/static/images/newslist/xinwen03.png" alt="">
+						</div>
+						<div class="xq_r xq_r1">
+							<h4>{$value.title}</h4>
+							<span>{$value.create_time|date='Y-m-s',###}</span>
+							<p>{$value.short_content}</p>
+						</div>
+					</a>
+				</li>
+				{/foreach}
+			</ul>
+		</div>
+		<div class="mulu"> <!-- 底部目录 -->
+			<div>
+				<span>{$pages['cur_page']}</span>/{$pages['tol_page']}&nbsp;页&nbsp;&nbsp;
+				{if $pages['cur_page'] == 1}
+				<a>上一页</a>
+				{else}
+				<a href="{:url('index',['cur_page'=>$pages['cur_page']-1])}">上一页</a>
+				{/if}
+
+				{if $pages['cur_page'] == $pages['tol_page']}
+				<a>下一页</a>
+				{else}
+				<a href="{:url('index',['cur_page'=>$pages['cur_page']+1])}">下一页</a>
+				{/if}
+
+				{foreach $pages['page_list'] as $keys=>$value}
+				{if $pages['cur_page'] == $keys}
+						<a class="active" href="{:url('index',['cur_page'=>$keys])}">{$keys}</a>
+				{else}
+						<a href="{:url('index',['cur_page'=>$keys])}">{$keys}</a>
+				{/if}
+				{/foreach}
+
+				{if $pages['cur_page'] == $pages['tol_page']}
+				<a>最后一页</a>
+				{else}
+				<a href="{:url('index',['cur_page'=>$keys])}">最后一页</a>
+				{/if}
+			</div>
+		</div>
+	</div>
+	{include file="/public/foot"}
+	<script>        
+  		var mySwiper = new Swiper ('.swiper-container', {
+    		direction: 'horizontal',
+    		loop: true,
+    		prevButton:'.swiper-button-prev',
+			nextButton:'.swiper-button-next',
+			autoplay : 4000,
+			effect : 'fade',
+			fade: {
+  				crossFade: true,
+			}
+    	})
+    </script>
+</body>
+</html> 

@@ -14,6 +14,7 @@
 	height:100px;
 	background-image: url("../images/newsdeta/xinwen01.jpg");
 	background-position: 100%;
+	background-size: 100% 100%;
 }
 .xw_head img{
 	margin:13px;
@@ -36,6 +37,12 @@
 .wenzhang > p{
 	color: #6f6e6e;
 	margin-bottom: 3%;
+}
+.main_01{
+	background-size: 100% 100%;
+}
+.main_01 img{
+	width: 100%;
 }
 .main_01,.main_02{
 	margin:0 auto;
@@ -66,4 +73,12 @@
 	text-decoration: none;
 	color: green;
 	cursor: pointer;
+}
+
+/* media 1280 */
+
+@media screen and (max-width:640px) {
+	.index_page{
+		font-size: 13px;
+	}
 }

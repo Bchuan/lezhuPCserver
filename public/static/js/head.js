@@ -1,3 +1,7 @@
+
+
+
+
 $(document).ready(function(){
 	$('.bc_navlistbar .hezuo').mouseover(function(){
 		$('.bc_navlistbar .hezuo_hide').show();
@@ -17,4 +21,10 @@ $(document).ready(function(){
 		},3000);
 	};
 	goright();
+	 
+	 var arr=window.location.href.split('/');
+	 var url ='.'+arr[8];
+	 $(url).addClass("active");
+	 console.log($(url))
 });
+

@@ -1,0 +1,40 @@
+{include file="public/header"} 
+
+ 
+
+
+<div class="container mt-3">
+    <div>分类</div>
+    <a href="{:url('add')}" class="btn btn-info">添加分类</a>
+    <a href="{:url('commodity/index')}" class="btn btn-primary">课程管理</a>
+    <table class="table">
+        <tr>
+            <th>编号</th>
+            <th>分类名称</th>
+            <th>级别</th>
+            <th>操作</th>
+        </tr>
+        {foreach $cate_list as $value}
+        <tr>
+            <td>{$value['cate_id']}</td>
+            <td>{$value['cate_name']}</td>
+            <td>
+                <!-- {if $value['level'] == 1} -->
+                一级分类
+                <!-- {elseif $value['level'] == 2} -->
+                二级分类
+
+                <!-- {else} -->
+                三级分类 
+                <!-- {/if} -->
+            </td>
+            <td><a href="" class="btn btn-danger">删除</a></td>
+        </tr>
+        {/foreach}
+    </table>
+    <div>
+     {$cate_list->render()}
+    </div>
+</div>
+
+{include file="public/footer"}

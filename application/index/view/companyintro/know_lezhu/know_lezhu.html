@@ -1,32 +1,74 @@
 <div class="know_lezhu">
-	<h1>认识乐住</h1>
-	<div class="many_p">
-		<p>乐住网络服务有限公司前身是长沙卓远文化传播有限公司，成立于2009年1月，8年社区资源服务经验，服务全国80多个城市的1496个小区近200万名业主。央视13台《面对面》、央<br>视7台《致富经》栏目都有专题报道公司创业历程。</p>
-		<p>2014年公司开启乐住智慧小区项目，创新性地自主研发了全国首个PC端与APP端同步的网上物业服务平台。乐住APP是在“互联网+”建设思路指引下，为居民提供集合网上物业、<br>公共服务、生活服务等多种功能，并可持续扩容的服务终端，成为小区生态链的“连接器”。</p>
-		<p>基于与物业的广泛合作基础，公司迅速和长沙市500多个小区、社区确认合作；与小区智能化第三方机构全国性供应商如汽车新能源企业特来电、自助写卡机企业方迪科技等签订合<br>作；同时作为中国银联湖南唯一战略合作伙伴，在全国已开展长春、昆明、岳阳等10多个城市合作运营试点，将逐步启动圈定的158个城市合作运营。</p>
-		<p>公司成为长沙市住建委“智慧小区建设标准”唯一起草单位，并荣获2015中国软件大会“智慧小区领域标杆企业”奖。2016年6月，公司及创始人曹志远先后被人民网、国家住建部<br>主办《中国建设报》等重要媒体作深度报道。2017年5月，三一街区智慧小区被湖南卫视、芒果TV、红网、三湘都市报、今日女报、大公报等10余家主流媒体深度报道。</p>
-	</div>
+    <h1>认识乐住</h1>
+    <div class="many_p">
+        {$intro_content.content}
+        <span>
+            <img src="__STATIC_PATH__/static/companyintro/images/lz-img.jpg" />
+        </span>
+    </div>
 </div>
-
 <style type="text/css">
-	.know_lezhu{
-		margin-top: 75px;
-		padding: 0px 20px;
-	}
-	.know_lezhu h1{
-		padding-left: 20px;
-		border-left: 6px solid #49d074;
-		font-size: 30px;
-		height: 33px;
-		line-height: 33px;
-		margin-bottom: 45px;
-	}
-	.know_lezhu .many_p{
-		color: #777;
-		font-size: 16px;
-	}
-	.know_lezhu .many_p p{
-		margin-bottom: 50px;
-		line-height: 22px;
-	}
+.know_lezhu {
+    width: 1280px;
+    margin: auto;
+}
+
+.know_lezhu h1 {
+    padding-left: 20px;
+    border-left: 6px solid #49d074;
+    font-size: 30px;
+    height: 33px;
+    line-height: 33px;
+    margin-bottom: 45px;
+}
+
+.know_lezhu .many_p {
+    color: #777;
+    font-size: 16px;
+}
+
+.know_lezhu .many_p p {
+    margin-bottom: 50px;
+    line-height: 22px;
+}
+.know_lezhu .many_p span{
+    display: inline-block;
+    margin:40px 0;
+}
+.know_lezhu .many_p img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+/* media 1280 */
+
+@media screen and (max-width:1280px) {
+    .know_lezhu {
+        width: 960px;
+    }
+    .know_lezhu .many_p{
+        padding:0 25px;
+    }
+}
+
+/* media 960 */
+@media screen and (max-width:960px) {
+    .know_lezhu {
+        width: 100%;
+    }
+    .know_lezhu .many_p{
+        padding:0 25px;
+    }
+}
+
+/* media 640 */
+@media screen and (max-width:640px) {
+    .know_lezhu {
+        width: 100%;
+    }
+    .know_lezhu .many_p{
+        padding:0 25px;
+    }
+}
 </style>

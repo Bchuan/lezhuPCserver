@@ -1,0 +1,180 @@
+@charset "utf-8";
+ 
+*
+{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+.wuye{
+	margin-top:80px;
+}
+.head_1 img{
+	width:100%;
+}
+.head_2, .head_3, .head_4, .head_5, .head_6{
+	text-align: center;
+	overflow: hidden;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.head_2 h1,.head_3 h1,.head_4 h1{
+	font-weight: 200;
+	font-size: 18px;
+}
+.head_2 h5,.head_3 h5,.head_4 h5{
+	color:#aaa;
+	/* margin-bottom:40px; */
+}
+.head_2,.head_3{
+	margin-bottom: 10px;
+}
+.head_2 p{
+	font-size: 12px;
+	color:#777;
+	margin-bottom:15px;
+}
+.head_2 img{
+	width: 100%;
+}
+.h3_l,.h3_m{
+	width:33.33%;
+	float:left;
+	text-align: center;
+}
+.h3_r{
+	width:33.33%;
+	float:right;
+	text-align: center;
+}
+.h3_l > div,.h3_m > div{
+	margin-left: 22%;
+}
+.h3_l a,.h3_m a{
+	width:35%;
+	float:left;
+	text-decoration: none;
+}
+.h3_r a{
+	width:30%;
+	float:left;
+	text-decoration: none;
+}
+.h3_r > div{
+	margin-left: 10%;
+	overflow: hidden;
+}
+.h3_r > div > a,.h3_l > div > a,.h3_m > div > a{
+	font-size: 12px;
+}
+.h3_r > img,.h3_l > img,.h3_m > img{
+	width: 80%;
+	margin: 0 auto;
+}
+.head_3 p{
+	font-size: 14px;
+	margin: 30px 0;
+}
+.head_3 a{
+	display: inline-block;
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 5px;
+}
+.head_4{
+	border-bottom: 1px solid #ccc;
+}
+.head_4 > div:last-child{
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+.h4_l{
+	float: left;
+	text-align: left;
+	margin-top: 20px;
+}
+.h4_l p{
+	font-size: 14px;
+}
+.h4_l ul{
+	margin:30px 0;
+	margin-left: 18px;
+}
+.h4_l ul li{
+	list-style: outside;
+    color: #777;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.h4_r>img{
+	/*height: 180px;*/
+	width: 80%;
+}
+
+.head_5,.head_6{
+	text-align: center;
+	overflow: hidden;
+	padding-bottom: 5%;
+	border-bottom: 1px solid #ccc;
+}
+.h5_l,.h5_r,.h6_l,.h6_r{
+	float:left;
+	width:50%;
+}
+.h5_l>img,.h6_r>img{
+	width:70%;
+	margin: 0 auto;
+}
+.h5_l,.h6_r{
+	margin-top: 5%;
+}
+.h5_r,.h6_l{
+	margin-top: 8%;
+	text-align: left;
+}
+.h5_r p{
+	font-size: 14px;
+}
+.h5_r ul{
+	margin:10px 0;
+	margin-left: 3%;
+}
+.h6_l p{
+	font-size: 14px;
+}
+.h6_l ul{
+	margin:10px 0;
+	margin-left: 18px;
+}
+.h5_r ul li,.h6_l ul li{
+	list-style: outside;
+    color: #777;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+/*footer*/
+.footer{
+    background: #3d3d3d;
+    text-align: center;
+	color: white;
+	line-height: 1.5;
+	padding-top: 7%;
+	padding-bottom: 7%;
+}
+.ft_p1{
+	font-size:20px;
+}
+.ft_p2{
+	font-size:36px;
+}
+
+
+@media screen and (max-width:769px){
+	  .ft_p1 {
+	      font-size: 18px;
+	  }
+	  .ft_p2 {
+	    font-size: 22px;
+	  }
+	}

@@ -1,0 +1,177 @@
+@charset "utf-8";
+ 
+*
+{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+
+
+.xinwen{
+		margin-bottom: 40px;
+		margin-top: 100px;
+}
+/*头部*/
+.xw_head{
+	height:50px;
+	background-image: url("../images/newslist/xinwen01.jpg");
+	background-position: 100%;
+}
+.xw_head img{
+	margin:13px;
+	margin-left:5%;
+	width: 30px;
+}
+.xw_head span{
+	color:white;
+	font-size: 14px;
+}
+/*轮播图*/
+.lunbo{
+	text-align: center;
+	width:100%;
+	margin-bottom: 15px;
+}
+.swiper-container{
+	width:90%;
+	margin:0 auto;
+}
+.swiper-wrapper{
+	width:100%;
+	position:relative;
+}
+.swiper-wrapper img{
+	margin-top: 15px;
+	width: 100%;
+	height: 200px;
+	cursor: pointer;
+}
+.swiper-button-next{
+	/*插件默认没法改*/
+	/*background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");*/
+}
+.swiper-slide h3{
+	font-weight: bold;
+	font-size: 15px;
+	overflow: hidden;
+}
+
+.swiper-slide .neirong{
+	position:absolute;
+	bottom: 0;
+	left: 15%;
+	margin-bottom: 0;
+	width:497px;
+	height:70px;
+	opacity:0.5;
+	color:white;
+	line-height: 70px;
+	background-color:black;
+	font-size: 16px;
+	text-align: left;
+}
+.swiper-button-prev,.swiper-button-next{
+	margin-top:40px !important;
+}
+
+/*详情*/
+.xiangqing{
+	width:90%;
+	margin:0 auto;
+}
+.xiangqing li{
+	padding: 20px 0;
+	border-bottom:1px dotted #ccc;
+	height: 150px;
+	list-style: none;
+	min-height: 100px;
+   	max-height: 135px;
+    overflow: hidden;
+    padding:15px 0;
+}
+.xq_l{
+	float:left;
+	height:100%;
+	width: 30%;
+}
+.xq_l img{
+	width:100%;
+	height:100%;
+	cursor: pointer;
+}
+.xq_r{
+	width: 65%;
+	height:100%;
+	float:right;
+	cursor: pointer;
+}
+.xq_r h4{
+	font-weight: bold;
+	width: 60%;
+    height: 20px;
+    font: bold 14px/20px "微软雅黑";
+    margin-bottom: 5px;
+    color: #333;
+    display: block;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 0;
+}
+.xq_r span{
+	float:right;
+	width: auto;
+    display: block;
+    font: 12px/20px "微软雅黑";
+    color: #777;
+}
+.xq_r p{
+	clear:both;
+	width: 100%;
+    height: 55px;
+    font: 12px/18px "微软雅黑";
+    margin-bottom: 0;
+    overflow: hidden;
+    color: #777;
+    text-indent: 2em;
+    float: left;
+}
+.swiper-slide .neirong{
+		left: 0;
+		right: 0;
+		width: auto;
+}
+.mulu{
+	text-align: center;
+	margin-top: 0;
+}
+.mulu > div{
+	overflow: hidden;
+	margin:0 auto;
+	height: 30px;
+	font-size: 12px;
+	line-height: 10px;
+	width:90%;
+	border-top: 2px solid green;
+}
+.mulu > div > a{
+	margin:8px 0;
+	padding:2px 8px;
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	cursor:pointer;
+}
+.mulu > div > a.active{
+	background: green;
+	color: white;
+}
+.mulu > div > a:hover{
+	color:green;
+}
+.mulu > div > a.active:hover{
+	color:white;
+}

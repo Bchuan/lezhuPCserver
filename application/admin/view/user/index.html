@@ -1,0 +1,38 @@
+{include file="public/header"} 
+
+
+<div class="container mt-3">
+    <a href="{:url('add')}" class="btn btn-info">添加用户</a>
+    <table class="table">
+        <tr>
+            <th>编号</th>
+            <th>账号</th>
+            <th>昵称</th>
+            <th>真实姓名</th>
+            <th>地址</th>
+            <th>真实姓名</th>
+        </tr>
+        {foreach $cate_list as $value}
+        <tr>
+            <td>{$value['cate_id']}</td>
+            <td>{$value['cate_name']}</td>
+            <td>
+                <!-- {if $value['level'] == 1} -->
+                一级分类
+                <!-- {elseif $value['level'] == 2} -->
+                二级分类
+
+                <!-- {else} -->
+                三级分类 
+                <!-- {/if} -->
+            </td>
+            <td><a href="" class="btn btn-danger">删除</a></td>
+        </tr>
+        {/foreach}
+    </table>
+    <div>
+     {$cate_list->render()}
+    </div>
+</div>
+
+{include file="public/footer"}

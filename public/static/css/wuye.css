@@ -137,12 +137,12 @@
 }
 /*footer*/
 .footer{
-	height:330px;
     background: #3d3d3d;
     text-align: center;
 	color: white;
 	line-height: 1.5;
 	padding-top: 7%;
+	padding-bottom: 7%;
 }
 .ft_p1{
 	font-size:20px;
@@ -150,3 +150,13 @@
 .ft_p2{
 	font-size:36px;
 }
+
+
+@media screen and (max-width:769px){
+	  .ft_p1 {
+	      font-size: 18px;
+	  }
+	  .ft_p2 {
+	    font-size: 22px;
+	  }
+	}

@@ -9,6 +9,9 @@
 a{
 	color: #333;
 	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	display: block;
 }
 a:hover{
 	color: #44be3f;
@@ -40,7 +43,7 @@ a:hover{
 	text-align: center;
 }
 .bc_navlistbar .header_m > ul > li:hover,.active a{
-	color:#44be3f;
+	color:#44be3f !important;
 	cursor:pointer;
 }
 .bc_navlistbar .hezuo{
@@ -90,32 +93,32 @@ a:hover{
 
 
 /*尾部*/
-.bc_navlistbar .footer{
+.bc_footlistbar .footer{
 	overflow: hidden;
 	height:300px;
 	width:100%;
 	background: url("../images/nav_foot/bg-footer.jpg");
 }
-.bc_navlistbar .foot_l{
+.bc_footlistbar .foot_l{
 	float:left;
 	width:15%;
 	text-align:center;
 	color:white;
 	margin-right:4%;
 }
-.bc_navlistbar .foot_l h4{
+.bc_footlistbar .foot_l h4{
 	margin: 15% 0;
 }
-.bc_navlistbar .foot_l a{
+.bc_footlistbar .foot_l a{
 	text-decoration: none;
 	color:white;
 	cursor:pointer;
 }
-.bc_navlistbar .foot_l a:hover{
+.bc_footlistbar .foot_l a:hover{
 	color:#44be3f;
 }
 
-.bc_navlistbar .foot_r{
+.bc_footlistbar .foot_r{
 	width: 21%;
 	float: right;
 	margin-top: 2%;
@@ -123,26 +126,74 @@ a:hover{
 	text-align: center;
 	color: white;
 }
-.bc_navlistbar .foot_r > p{
+.bc_footlistbar .foot_r > p{
 	color: white;
 	font-weight: bold;
 	font-size:20px;
 }
-.bc_navlistbar .foot_r1{
+.bc_footlistbar .foot_r1{
 	float:left;
 	width:45%;
 }
-.bc_navlistbar .foot_r2{
+.bc_footlistbar .foot_r2{
 	float:right;
 	width:45%;
 }
-.bc_navlistbar .foot_r > div > img{
+.bc_footlistbar .foot_r > div > img{
 	width:100%;
 	margin-bottom:10px;
 }
-.bc_navlistbar .footer > p{
+.bc_footlistbar .footer > p{
 	clear:both;
 	text-align: center;
 	color:white;
 }
+.m-header{
+	display: none;
+}
+.m-footer{
+	display: none;
+}
 
+@media screen and (max-width:1200px){
+	 	.bc_navlistbar .header_l img{
+			margin:10px 0;
+		}
+		.bc_navlistbar .header_m > ul > li{
+			width:75px;
+		}
+		.bc_navlistbar .hezuo_hide > ul >li{
+			width:80px;
+		}
+		.bc_navlistbar .header_r{
+			margin-right: 10px;
+		}
+	}
+
+
+@media screen and (max-width:960px){
+	 	.bc_navlistbar{
+	 		display: none;
+	 	}
+	 	.m-header{
+			display: block;
+		}
+		.container-index{
+			margin-top: 100px;
+		}
+	}
+
+@media screen and (max-width:769px){
+      .bc_footlistbar{
+      	display: none;
+      }
+      .m-footer{
+      	display: block;
+      }
+      .bc_navlistbar{
+	 		display: none;
+	 	}
+      .container-index,.wuye,.xinwen,.app,.kaifas,.main-connect{
+		margin-bottom: 40px;
+	  }
+	}

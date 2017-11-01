@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:85:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\connectus\index.html";i:1507885658;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\head.html";i:1508310960;s:80:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\common\map.html";i:1507879815;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\foot.html";i:1508310960;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:85:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\connectus\index.html";i:1509505601;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\head.html";i:1509504145;s:80:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\common\map.html";i:1507879815;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\foot.html";i:1509505509;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +6,7 @@
 	<title>联系我们</title>
 	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="__STATICPATH__/static/css/connectus.css">
+	<script src="__STATICPATH__/static/js/common.js"></script>
 	<script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
@@ -13,7 +14,6 @@
  	<script src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="__STATICPATH__/static/css/head.css" />
 	<script type="text/javascript" src="__STATICPATH__/static/js/head.js" ></script>
-<body>
 	<div class="bc_navlistbar">
 		<div class="header"> <!-- 头部导航 -->
 			<div class="header_l">
@@ -21,23 +21,23 @@
 			</div>
 			<div class="header_m">
 				<ul class="header_m_ul">
-					<li class="active"><a href="<?php echo url('/index/index/index'); ?>">首页</a></li>
-					<li><a href="<?php echo url('/index/productintro/index'); ?>">产品简介</a></li>
+					<li class="index"><a href="<?php echo url('/index/index/index'); ?>">首页</a></li>
+					<li class="productintro"><a href="<?php echo url('/index/productintro/index'); ?>">产品简介</a></li>
 					<li class="hezuo">合作专区
 						<span class="glyphicon glyphicon-chevron-down"></span>
 						<div class="hezuo_hide">
 							<ul>
-								<li><a href="<?php echo url('/index/cityopration/index'); ?>">城市运营商</a></li>
-								<li><a href="<?php echo url('/index/advertise/index'); ?>">广告合作</a></li>
-								<li><a href="<?php echo url('/index/property/index'); ?>">物业合作</a></li>
-								<li><a href="<?php echo url('/index/develop/index'); ?>">开发商合作</a></li>
+								<li class="cityopration"><a href="<?php echo url('/index/cityopration/index'); ?>">城市运营商</a></li>
+								<li class="advertise"><a href="<?php echo url('/index/advertise/index'); ?>">广告合作</a></li>
+								<li class="property"><a href="<?php echo url('/index/property/index'); ?>">物业合作</a></li>
+								<li class="develop"><a href="<?php echo url('/index/develop/index'); ?>">开发商合作</a></li>
 							</ul>
 						</div>
 					</li>
-					<li><a href="<?php echo url('/index/companyintro/index'); ?>">企业简介</a></li>
-					<li><a href="<?php echo url('/index/newslist/index'); ?>">新闻动态</a></li>
-					<li><a href="<?php echo url('/index/connectus/index'); ?>">联系我们</a></li>
-					<li><a href="<?php echo url('/index/getapp/index'); ?>">App下载</a></li>
+					<li class="companyintro"><a href="<?php echo url('/index/companyintro/index'); ?>">企业简介</a></li>
+					<li class="newslist"><a href="<?php echo url('/index/newslist/index'); ?>">新闻动态</a></li>
+					<li class="connectus"><a href="<?php echo url('/index/connectus/index'); ?>">联系我们</a></li>
+					<li class="getapp"><a href="<?php echo url('/index/getapp/index'); ?>">App下载</a></li>
 				</ul>
 			</div>
 			<div class="header_r">
@@ -48,6 +48,37 @@
 		</div>
 	</div>
 	
+
+	
+<link type="text/css" rel="stylesheet" href="__STATICPATH__/static/m_css/head.css" />
+<script type="text/javascript" src="__STATICPATH__/static/m_js/head.js" ></script>
+<script src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js"></script>
+
+<div class="m-header"> <!-- 头部导航 -->
+	<div class="m_head">
+		<img src="__STATICPATH__/static/m_images/index/logo1.jpg" alt="">
+		<span>招商热线 : 400-8090-590</span>
+	</div>
+	<div>
+		<ul class="m_head_ul">
+			<li class="productintro"><a href="<?php echo url('/index/productintro/index'); ?>">产品简介</a></li>
+			<li class="companyintro"><a href="<?php echo url('/index/companyintro/index'); ?>">企业简介</a></li>
+			<li class="m_hezuo" value="0">合作专区
+				<span class="glyphicon glyphicon-chevron-down"></span>
+				<div class="m_hezuo_hide">
+					<ul class="m_hide_ul">
+						<li class="cityopration"><a href="<?php echo url('/index/cityopration/index'); ?>">城市运营商</a></li>
+						<li class="advertise"><a href="<?php echo url('/index/advertise/index'); ?>">广告合作</a></li>
+						<li class="property"><a href="<?php echo url('/index/property/index'); ?>">物业合作</a></li>
+						<li class="develop"><a href="<?php echo url('index/develop/index'); ?>">开发商合作</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="newslist"><a href="<?php echo url('index/newslist/index'); ?>">新闻动态</a></li>
+			<li class="connectus"><a href="<?php echo url('index/connectus/index'); ?>">联系我们</a></li>
+		</ul>
+	</div>
+</div>
 	<div class="main-connect">
 		<div class="left-conadd">
 			<div class="concat">
@@ -204,7 +235,7 @@
 			<img src="http://lezhu.tv/App/Tpl/Public/lzimg/download/sao.png" alt="">
 		</div>
 	</div>
-	<div class="bc_navlistbar ">
+	<div class="bc_footlistbar">
 	<div class="footer"><!-- 底部 -->
 		<div class="foot_l">
 			<h4>产品简介</h4>
@@ -256,6 +287,20 @@
 		<p>copyright©2012-2108版权所有 乐住网络服务有限公司 湘ICP 备B2-20140080</p>
 	</div>
 </div>
-	
+
+
+<div class="m-footer"> <!-- 底部 -->
+	<ul>
+		<li>
+			<a href="<?php echo url('index/index/index'); ?>">首页</a>
+		</li>
+		<li>
+			<a href="">QQ咨询</a>
+		</li>
+		<li>
+			<a href="">电话咨询</a>
+		</li>
+	</ul>
+</div>
 </body>
 </html>

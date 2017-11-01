@@ -1,0 +1,55 @@
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.main-connect{
+		width: 90%;
+	    text-align: center;
+	    padding-top: 80px;
+	    margin:20px auto;
+	    overflow: hidden;
+	}
+	.main-connect .left-conadd{
+		width: 100%;
+		box-sizing: border-box;
+	    text-align: left;
+	    position: relative;
+	}
+	.main-connect .concat{
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	.main-connect .concat h3{
+		font: bold 18px "微软雅黑";
+	    color: #222;
+	    margin-bottom: 15px;
+	}
+	.main-connect .concat .con-list p{
+		width: 100%;
+    	display: table;
+    	margin-bottom: 10px;
+    	font: 14px/30px "微软雅黑";
+	}
+	.main-connect .concat .con-list .one img{
+		margin: 6px 10px 10px 0;
+    	float: left;
+	}
+	.main-connect .concat .con-list .two img{
+		margin: 7px 10px 0 7px;
+    	float: left;
+	}
+	.main-connect .concat .con-list p span{
+		float: left;
+    	display: block;
+	}
+	.main-connect .address{
+		overflow: hidden;
+	}
+	.main-connect .right-signal{
+		margin: 20px auto;
+	}
+	.main-connect .right-signal img{
+		height: 300px;
+	}
+

@@ -1,5 +1,6 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:18:{s:88:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\index.html";i:1508315837;s:83:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\common\header.html";i:1508310960;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\head.html";i:1508310960;s:104:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\header_img\header_img.html";i:1508310960;s:108:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\fixed_navbar\fixed_navbar.html";i:1508310960;s:118:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\trademark_concept\trademark_concept.html";i:1508310960;s:114:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\market_prospect\market_prospect.html";i:1508310960;s:104:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\why_select\why_select.html";i:1508310960;s:110:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\lezhu_product\lezhu_product.html";i:1508310960;s:102:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\tv_report\tv_report.html";i:1508310960;s:110:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\profit_budget\profit_budget.html";i:1508315902;s:108:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\welcome_join\welcome_join.html";i:1508310960;s:124:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\cooperation_relation\cooperation_relation.html";i:1508310960;s:126:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\cooperation_advantage\cooperation_advantage.html";i:1508315818;s:122:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\cooperation_process\cooperation_process.html";i:1508310960;s:104:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\change_bar\change_bar.html";i:1508316041;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\foot.html";i:1508310960;s:83:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\common\footer.html";i:1508310960;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:18:{s:88:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\index.html";i:1509505581;s:83:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\common\header.html";i:1508310960;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\head.html";i:1509504145;s:104:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\header_img\header_img.html";i:1508310960;s:108:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\fixed_navbar\fixed_navbar.html";i:1508403976;s:118:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\trademark_concept\trademark_concept.html";i:1508403751;s:114:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\market_prospect\market_prospect.html";i:1508403758;s:104:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\why_select\why_select.html";i:1508403742;s:110:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\lezhu_product\lezhu_product.html";i:1508403760;s:102:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\tv_report\tv_report.html";i:1508403748;s:110:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\profit_budget\profit_budget.html";i:1508403755;s:108:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\welcome_join\welcome_join.html";i:1508403745;s:124:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\cooperation_relation\cooperation_relation.html";i:1508403768;s:126:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\cooperation_advantage\cooperation_advantage.html";i:1508403774;s:122:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\cooperation_process\cooperation_process.html";i:1508403771;s:104:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\cityopration\change_bar\change_bar.html";i:1508404375;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\foot.html";i:1509505509;s:83:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\common\footer.html";i:1508310960;}*/ ?>
 <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<script src="__STATICPATH__/static/js/common.js"></script>
 <!--引入公共头部-->
 <!DOCTYPE html>
 <html>
@@ -26,7 +27,6 @@
  	<script src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="__STATICPATH__/static/css/head.css" />
 	<script type="text/javascript" src="__STATICPATH__/static/js/head.js" ></script>
-<body>
 	<div class="bc_navlistbar">
 		<div class="header"> <!-- 头部导航 -->
 			<div class="header_l">
@@ -34,23 +34,23 @@
 			</div>
 			<div class="header_m">
 				<ul class="header_m_ul">
-					<li class="active"><a href="<?php echo url('/index/index/index'); ?>">首页</a></li>
-					<li><a href="<?php echo url('/index/productintro/index'); ?>">产品简介</a></li>
+					<li class="index"><a href="<?php echo url('/index/index/index'); ?>">首页</a></li>
+					<li class="productintro"><a href="<?php echo url('/index/productintro/index'); ?>">产品简介</a></li>
 					<li class="hezuo">合作专区
 						<span class="glyphicon glyphicon-chevron-down"></span>
 						<div class="hezuo_hide">
 							<ul>
-								<li><a href="<?php echo url('/index/cityopration/index'); ?>">城市运营商</a></li>
-								<li><a href="<?php echo url('/index/advertise/index'); ?>">广告合作</a></li>
-								<li><a href="<?php echo url('/index/property/index'); ?>">物业合作</a></li>
-								<li><a href="<?php echo url('/index/develop/index'); ?>">开发商合作</a></li>
+								<li class="cityopration"><a href="<?php echo url('/index/cityopration/index'); ?>">城市运营商</a></li>
+								<li class="advertise"><a href="<?php echo url('/index/advertise/index'); ?>">广告合作</a></li>
+								<li class="property"><a href="<?php echo url('/index/property/index'); ?>">物业合作</a></li>
+								<li class="develop"><a href="<?php echo url('/index/develop/index'); ?>">开发商合作</a></li>
 							</ul>
 						</div>
 					</li>
-					<li><a href="<?php echo url('/index/companyintro/index'); ?>">企业简介</a></li>
-					<li><a href="<?php echo url('/index/newslist/index'); ?>">新闻动态</a></li>
-					<li><a href="<?php echo url('/index/connectus/index'); ?>">联系我们</a></li>
-					<li><a href="<?php echo url('/index/getapp/index'); ?>">App下载</a></li>
+					<li class="companyintro"><a href="<?php echo url('/index/companyintro/index'); ?>">企业简介</a></li>
+					<li class="newslist"><a href="<?php echo url('/index/newslist/index'); ?>">新闻动态</a></li>
+					<li class="connectus"><a href="<?php echo url('/index/connectus/index'); ?>">联系我们</a></li>
+					<li class="getapp"><a href="<?php echo url('/index/getapp/index'); ?>">App下载</a></li>
 				</ul>
 			</div>
 			<div class="header_r">
@@ -61,6 +61,37 @@
 		</div>
 	</div>
 	
+
+	
+<link type="text/css" rel="stylesheet" href="__STATICPATH__/static/m_css/head.css" />
+<script type="text/javascript" src="__STATICPATH__/static/m_js/head.js" ></script>
+<script src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js"></script>
+
+<div class="m-header"> <!-- 头部导航 -->
+	<div class="m_head">
+		<img src="__STATICPATH__/static/m_images/index/logo1.jpg" alt="">
+		<span>招商热线 : 400-8090-590</span>
+	</div>
+	<div>
+		<ul class="m_head_ul">
+			<li class="productintro"><a href="<?php echo url('/index/productintro/index'); ?>">产品简介</a></li>
+			<li class="companyintro"><a href="<?php echo url('/index/companyintro/index'); ?>">企业简介</a></li>
+			<li class="m_hezuo" value="0">合作专区
+				<span class="glyphicon glyphicon-chevron-down"></span>
+				<div class="m_hezuo_hide">
+					<ul class="m_hide_ul">
+						<li class="cityopration"><a href="<?php echo url('/index/cityopration/index'); ?>">城市运营商</a></li>
+						<li class="advertise"><a href="<?php echo url('/index/advertise/index'); ?>">广告合作</a></li>
+						<li class="property"><a href="<?php echo url('/index/property/index'); ?>">物业合作</a></li>
+						<li class="develop"><a href="<?php echo url('index/develop/index'); ?>">开发商合作</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="newslist"><a href="<?php echo url('index/newslist/index'); ?>">新闻动态</a></li>
+			<li class="connectus"><a href="<?php echo url('index/connectus/index'); ?>">联系我们</a></li>
+		</ul>
+	</div>
+</div>
 
 <!--引入头部图片-->
 <div class="header_img">
@@ -154,6 +185,7 @@
 	var getBartop=getBar.offset().top;
 	$(window).scroll(function(){
 		var H=$(document).scrollTop();
+		console.log(H)
 		if(H>getBartop-80){
 			$('.fixed_navbar').addClass('fixedclass');
 		}
@@ -320,13 +352,14 @@
 		float: left;
 		overflow: hidden;
 		margin-top: 50px;
+		margin-left: 3%;
 	}
 	.market_prospect .word_img .two_img .one_img{
 		float: left;
 		position: relative;
 		width: 230px;
 		height: 230px;
-		margin-left: 60px;
+		margin-left: 0px;
 	}
 	.market_prospect .word_img .two_img .one_img img{
 		border-radius: 50%;
@@ -749,6 +782,7 @@
 	}
 	.profit_budget .set_padding .form_show table tr th{
 		width: 25%;
+		text-align: center;
 	}
 	/*瞄点链接*/
 	.profit_budget #profit_budget{
@@ -1171,6 +1205,7 @@
 	.cooperation_advantage .container ul li .many_p p{
 		font-size: 14px;
 		line-height: 20px;
+		margin: 0;
 	}
 	/*瞄点链接*/
 	.cooperation_advantage #cooperation_advantage{
@@ -1309,50 +1344,60 @@
 	var barH8=$('.cooperation_relation').offset().top;
 	var barH9=$('.cooperation_advantage').offset().top;
 	var barH10=$('.cooperation_process').offset().top;
-	console.log($('.fixed_navbar ul li').eq(0).find('a'))
+	console.log($('.why_select'))
+	console.log(barH1)
+	console.log(barH2)
+	console.log(barH3)
+	console.log(barH4)
+	console.log(barH5)
+	console.log(barH6)
+	console.log(barH7)
+	console.log(barH8)
+	console.log(barH9)
+	console.log(barH10)
 	console.log($('.fixed_navbar ul li').eq(0).siblings().find('a'))
 //	$('.fixed_navbar ul li').eq(0).find('a').css({'background':'#f0f9f1','color':'#333'})
 	$(window).scroll(function(){
 		var H=$(document).scrollTop();
 //		console.log(H)
 //		console.log(barH2)
-		if(H<barH2-200){
+		if(H<barH2-210){
 			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
 			$('.fixed_navbar ul li').eq(0).find('a').css({'background':'#f0f9f1','color':'#333'})
 		}
-		else if(H<barH3-200&&H>=barH2-200){
+		else if(H<barH3-210&&H>=barH2-210){
 			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
 			$('.fixed_navbar ul li').eq(1).find('a').css({'background':'#f0f9f1','color':'#333'})
 		}
-		else if(H<barH4-200&&H>=barH3-200){
+		else if(H<barH4-210&&H>=barH3-210){
 			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
 			$('.fixed_navbar ul li').eq(2).find('a').css({'background':'#f0f9f1','color':'#333'})
 		}
-		else if(H<barH5-200&&H>=barH4-200){
+		else if(H<barH5-210&&H>=barH4-210){
 			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
 			$('.fixed_navbar ul li').eq(3).find('a').css({'background':'#f0f9f1','color':'#333'})
 		}
-		else if(H<barH6-200&&H>=barH5-200){
+		else if(H<barH6-210&&H>=barH5-210){
 			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
 			$('.fixed_navbar ul li').eq(4).find('a').css({'background':'#f0f9f1','color':'#333'})
 		}
-		else if(H<barH7-200&&H>=barH6-200){
+		else if(H<barH7-210&&H>=barH6-210){
 			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
 			$('.fixed_navbar ul li').eq(5).find('a').css({'background':'#f0f9f1','color':'#333'})
 		}
-		else if(H<barH8-200&&H>=barH7-200){
+		else if(H<barH8-210&&H>=barH7-210){
 			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
 			$('.fixed_navbar ul li').eq(6).find('a').css({'background':'#f0f9f1','color':'#333'})
 		}
-		else if(H<barH9-200&&H>=barH8-200){
+		else if(H<barH9-210&&H>=barH8-210){
 			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
 			$('.fixed_navbar ul li').eq(7).find('a').css({'background':'#f0f9f1','color':'#333'})
 		}
-		else if(H<barH10-200&&H>=barH9-200){
+		else if(H<barH10-210&&H>=barH9-210){
 			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
 			$('.fixed_navbar ul li').eq(8).find('a').css({'background':'#f0f9f1','color':'#333'})
 		}
-		else if(H>=barH10-200){
+		else if(H>=barH10-210){
 			$('.fixed_navbar ul li').find('a').css({'background':'#49d075','color':'#fff'})
 			$('.fixed_navbar ul li').eq(9).find('a').css({'background':'#f0f9f1','color':'#333'})
 		}
@@ -1360,7 +1405,7 @@
 </script>
 
 <!--引入公共导航尾部-->
-<div class="bc_navlistbar ">
+<div class="bc_footlistbar">
 	<div class="footer"><!-- 底部 -->
 		<div class="foot_l">
 			<h4>产品简介</h4>
@@ -1412,7 +1457,21 @@
 		<p>copyright©2012-2108版权所有 乐住网络服务有限公司 湘ICP 备B2-20140080</p>
 	</div>
 </div>
-	
+
+
+<div class="m-footer"> <!-- 底部 -->
+	<ul>
+		<li>
+			<a href="<?php echo url('index/index/index'); ?>">首页</a>
+		</li>
+		<li>
+			<a href="">QQ咨询</a>
+		</li>
+		<li>
+			<a href="">电话咨询</a>
+		</li>
+	</ul>
+</div>
 
 <!--引入公共尾部-->
 

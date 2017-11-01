@@ -1,0 +1,197 @@
+<div id="vue_internet">
+	<div class="vue_internet">
+		<h1>网上物业管理系统 为高效而生</h1>
+		<div class="zr_header">
+			<ul>
+				<li v-on:click='changeHead(1)' v-bind:class='{bg_green:changeNum_head==1}'>网上物业系统</li>
+				<li v-on:click='changeHead(2)' v-bind:class='{bg_green:changeNum_head==2}'>物业APP</li>
+				<li v-on:click='changeHead(3)' v-bind:class='{bg_green:changeNum_head==3}'>业主APP</li>
+			</ul>
+		</div>
+		<div v-if='changeNum_head==1' class="container1">
+			<div class="img_right">
+				<img src="__STATIC_PATH__/static/productintro/images/wswy1.png"/>
+			</div>
+			<div>
+				<div>
+					<div>1.基础数据管理</div>
+					<p>搭建和管理小区、房产、物业人员、账户、客户等基础数据信息。</p>
+				</div>
+				<div>
+					<div>2.客户服务管理</div>
+					<p>物业公司提供面向业主的多渠道的服务窗口，如投诉、报修和意见等诉求。</p>
+				</div>
+				<div>
+					<div>3.财务管理</div>
+					<p>周期性和临时性收付费模式，多维度财务数据报表的支撑。</p>
+				</div>
+				<div>
+					<div>4.设施设备巡检系统</div>
+					<p>掌控和管理设施设备的全生命周期情况，移动APP线下采集登记设施设备状态及信息。</p>
+				</div>
+				<div>
+					<div>5.品质核查管理系统</div>
+					<p>好的品质是盯出来的，通过统一标准和移动终端，核查和监督现场的品质核查工作。</p>
+				</div>		
+			</div>
+		</div>
+		<div v-if='changeNum_head==2' class="container2">
+			<div class="img_right">
+				<img src="__STATIC_PATH__/static/productintro/images/wswy2.png"/>
+			</div>
+			<div class="property-left">
+				<div class="property-list">
+					<p>1.云端通讯录，不存号码也能找到同事，沟通更便捷；</p>
+				</div>
+				<div class="property-list">
+					<p>2.移动报修处理，实时接收派单任务，进行接单报修处理，回访工作，提交物业服务质量；</p>
+				</div>
+				<div class="property-list">
+					<p>3.实时接收查看最新发布的公告通知信息，随时随地，方便快捷；</p>
+				</div>
+				<div class="property-list">
+					<p>4.无纸化移动验房，只需通过选择即可完成验房问题登记，支撑拍照上传，业主可在手机上
+进行签字确认验房结果，提升提升验房工作效率；</p>
+				</div>
+			</div>
+		</div>
+		<div v-if='changeNum_head==3' class="container3">
+			<div class="img_right">
+				<img src="__STATIC_PATH__/static/productintro/images/wswy3.png"/>
+			</div>
+			<div class="property-left">
+				<div class="property-list">
+					<p>1.物业费、水电费、停车费、生活服务等在线缴纳，足不出户，方便快捷；</p>
+				</div>
+				<div class="property-list">
+					<p>2.移动报修投诉，支持文字、语音、图片，实现多元化内容描述，使问题更加清晰明了；</p>
+				</div>
+				<div class="property-list">
+					<p>3.随时掌握物业通知、物业风采、业主须知等资讯；</p>
+				</div>
+				<div class="property-list">
+					<p>4.连接小区智能设备，享受APP掌上智慧生活新模式；</p>
+				</div>
+				<div class="property-list">
+					<p>5.邻里互动，小区邻里活动的沟通交流平台，打造美好的小区邻里氛围；</p>
+				</div>
+				<div class="property-list">
+					<p>6.轻松实现社区O2O在线交易，线上选购周边商家商品，享受线上优惠活动。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style type="text/css">
+	.vue_internet{
+		margin: 0px;
+		padding: 0px 15px;
+		list-style: none;
+		padding-top: 30px;
+		background: white;
+		margin-top: 15px;
+		overflow: hidden;
+	}
+	.vue_internet h1{
+		font-size: 18px;
+		text-align: center;
+		color: #49d075;
+		width: 165px;
+		font-weight: 200;
+		margin: 0 auto;
+	}
+	.vue_internet ul{
+		overflow: hidden;
+		margin-top: 20px;
+	}
+	.vue_internet ul li{
+		width: 25%;
+		height: 30px;
+		text-align: center;
+		float: left;
+		list-style: none;
+		line-height: 30px;
+		font-size: 14px;
+		margin-right: 12.5%;
+		color: #333333;
+	}
+	.vue_internet ul li:nth-child(3){
+		margin-right: 0;
+	}
+	.vue_internet .zr_header ul .bg_green{
+		background: #49d075;	
+		color: #ffffff;	
+	}
+	/*容器*/
+	.vue_internet  .img_right{
+		width: 40%;
+		margin: 30px auto;
+	}
+	.vue_internet  .img_right img{
+		width: 100%;
+	}
+	
+	
+	@media (max-width:640px){
+		.vue_internet h1{
+			font-size: 15px;
+			width: 120px;
+		}
+		.vue_internet ul li{
+			height: 23px;
+			line-height: 23px;
+			font-size: 14px;
+		}
+	}
+	@media (min-width:960px) and (max-width:1280px){
+		.vue_internet{
+			padding-top: 45px;
+		}
+		.vue_internet h1{
+			font-size: 22px;
+			width: 180px;
+		}
+		.vue_internet ul{
+			margin-top: 30px;
+		}
+		.vue_internet ul li{
+			height: 30px;
+			line-height: 30px;
+			font-size: 18px;
+		}
+	}
+	@media (min-width:1280px){
+		.vue_internet{
+			padding-top: 50px;
+		}
+		.vue_internet h1{
+			font-size: 26px;
+			width: 210px;
+		}
+		.vue_internet ul{
+			margin-top: 35px;
+		}
+		.vue_internet ul li{
+			height: 33px;
+			line-height: 33px;
+			font-size: 19px;
+			margin-bottom: 3px;
+		}
+	}
+</style>
+
+<script type="text/javascript">
+	new Vue({
+		el:'#vue_internet',
+		data:{
+			changeNum_head:1
+		},
+		methods:{
+			changeHead:function(num){
+				this.changeNum_head=num;
+			}
+		}
+	});
+
+</script>

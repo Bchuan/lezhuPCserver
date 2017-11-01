@@ -1,0 +1,63 @@
+
+<!-- <link rel="stylesheet" href="__STATICPATH__/static/css/swiper.min.css">
+<script src="__STATICPATH__/static/js/swiper.min.js"></script> -->
+<style>
+    .banner{
+        overflow: hidden;
+        margin-top: 20px;
+    }
+	.banner .swiper-slide{
+		max-height: 500px;
+        width: 100%;
+	}
+    .banner .swiper-slide img{
+        width: 100%;
+        vertical-align: middle;
+    }
+    .banner .swiper-button-prev,.swiper-button-next{
+        opacity: 0.3;
+    }
+    .banner .swiper-button-prev:hover,.swiper-button-next:hover{
+        opacity: 1;
+    }
+</style>
+	<div class="swiper-container swiper-container-horizontal banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="www.baidu.com"><img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/banner3.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="www.baidu.com"><img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/banner4.jpg" alt=""></a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="www.baidu.com"><img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/banner1.jpg" alt=""></a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="www.baidu.com"><img src="http://lezhu.tv/App/Tpl/Public/lzimg/index/banner2.jpg" alt=""></a>
+            </div>
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+        	<span class="swiper-pagination-bullet"></span>
+        	<span class="swiper-pagination-bullet"></span>
+        	<span class="swiper-pagination-bullet"></span>
+        	<span class="swiper-pagination-bullet"></span>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+<script>
+    var swiper = new Swiper('.banner', {
+        pagination: '.swiper-pagination',
+        loop:true,
+        paginationClickable: true,
+        autoplay : 5000,
+        autoplayDisableOnInteraction : false,
+        grabCursor : true,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+    });
+    </script>

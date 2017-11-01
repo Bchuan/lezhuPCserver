@@ -1,6 +1,7 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:10:{s:88:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\productintro\index.html";i:1508311394;s:83:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\common\header.html";i:1508310960;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\head.html";i:1508310960;s:104:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\productintro\header_img\header_img.html";i:1508310960;s:102:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\productintro\vue_store\vue_store.html";i:1508310960;s:110:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\productintro\vue_store_img\vue_store_img.html";i:1508310960;s:108:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\productintro\vue_internet\vue_internet.html";i:1508310960;s:116:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\productintro\vue_internet_img\vue_internet_img.html";i:1508310960;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\foot.html";i:1508310960;s:83:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\common\footer.html";i:1508310960;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:10:{s:88:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\productintro\index.html";i:1509505648;s:83:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\common\header.html";i:1508310960;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\head.html";i:1509504145;s:104:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\productintro\header_img\header_img.html";i:1508310960;s:102:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\productintro\vue_store\vue_store.html";i:1508395675;s:110:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\productintro\vue_store_img\vue_store_img.html";i:1508310960;s:108:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\productintro\vue_internet\vue_internet.html";i:1508395675;s:116:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\productintro\vue_internet_img\vue_internet_img.html";i:1508395675;s:81:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\public\foot.html";i:1509505509;s:83:"D:\wamp64\www\php\project\lezhu\public/../application/index\view\common\footer.html";i:1508310960;}*/ ?>
 
 <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<script src="__STATICPATH__/static/js/common.js"></script>
 <!--引入公共头部-->
 <!DOCTYPE html>
 <html>
@@ -27,7 +28,6 @@
  	<script src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="__STATICPATH__/static/css/head.css" />
 	<script type="text/javascript" src="__STATICPATH__/static/js/head.js" ></script>
-<body>
 	<div class="bc_navlistbar">
 		<div class="header"> <!-- 头部导航 -->
 			<div class="header_l">
@@ -35,23 +35,23 @@
 			</div>
 			<div class="header_m">
 				<ul class="header_m_ul">
-					<li class="active"><a href="<?php echo url('/index/index/index'); ?>">首页</a></li>
-					<li><a href="<?php echo url('/index/productintro/index'); ?>">产品简介</a></li>
+					<li class="index"><a href="<?php echo url('/index/index/index'); ?>">首页</a></li>
+					<li class="productintro"><a href="<?php echo url('/index/productintro/index'); ?>">产品简介</a></li>
 					<li class="hezuo">合作专区
 						<span class="glyphicon glyphicon-chevron-down"></span>
 						<div class="hezuo_hide">
 							<ul>
-								<li><a href="<?php echo url('/index/cityopration/index'); ?>">城市运营商</a></li>
-								<li><a href="<?php echo url('/index/advertise/index'); ?>">广告合作</a></li>
-								<li><a href="<?php echo url('/index/property/index'); ?>">物业合作</a></li>
-								<li><a href="<?php echo url('/index/develop/index'); ?>">开发商合作</a></li>
+								<li class="cityopration"><a href="<?php echo url('/index/cityopration/index'); ?>">城市运营商</a></li>
+								<li class="advertise"><a href="<?php echo url('/index/advertise/index'); ?>">广告合作</a></li>
+								<li class="property"><a href="<?php echo url('/index/property/index'); ?>">物业合作</a></li>
+								<li class="develop"><a href="<?php echo url('/index/develop/index'); ?>">开发商合作</a></li>
 							</ul>
 						</div>
 					</li>
-					<li><a href="<?php echo url('/index/companyintro/index'); ?>">企业简介</a></li>
-					<li><a href="<?php echo url('/index/newslist/index'); ?>">新闻动态</a></li>
-					<li><a href="<?php echo url('/index/connectus/index'); ?>">联系我们</a></li>
-					<li><a href="<?php echo url('/index/getapp/index'); ?>">App下载</a></li>
+					<li class="companyintro"><a href="<?php echo url('/index/companyintro/index'); ?>">企业简介</a></li>
+					<li class="newslist"><a href="<?php echo url('/index/newslist/index'); ?>">新闻动态</a></li>
+					<li class="connectus"><a href="<?php echo url('/index/connectus/index'); ?>">联系我们</a></li>
+					<li class="getapp"><a href="<?php echo url('/index/getapp/index'); ?>">App下载</a></li>
 				</ul>
 			</div>
 			<div class="header_r">
@@ -62,6 +62,37 @@
 		</div>
 	</div>
 	
+
+	
+<link type="text/css" rel="stylesheet" href="__STATICPATH__/static/m_css/head.css" />
+<script type="text/javascript" src="__STATICPATH__/static/m_js/head.js" ></script>
+<script src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js"></script>
+
+<div class="m-header"> <!-- 头部导航 -->
+	<div class="m_head">
+		<img src="__STATICPATH__/static/m_images/index/logo1.jpg" alt="">
+		<span>招商热线 : 400-8090-590</span>
+	</div>
+	<div>
+		<ul class="m_head_ul">
+			<li class="productintro"><a href="<?php echo url('/index/productintro/index'); ?>">产品简介</a></li>
+			<li class="companyintro"><a href="<?php echo url('/index/companyintro/index'); ?>">企业简介</a></li>
+			<li class="m_hezuo" value="0">合作专区
+				<span class="glyphicon glyphicon-chevron-down"></span>
+				<div class="m_hezuo_hide">
+					<ul class="m_hide_ul">
+						<li class="cityopration"><a href="<?php echo url('/index/cityopration/index'); ?>">城市运营商</a></li>
+						<li class="advertise"><a href="<?php echo url('/index/advertise/index'); ?>">广告合作</a></li>
+						<li class="property"><a href="<?php echo url('/index/property/index'); ?>">物业合作</a></li>
+						<li class="develop"><a href="<?php echo url('index/develop/index'); ?>">开发商合作</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="newslist"><a href="<?php echo url('index/newslist/index'); ?>">新闻动态</a></li>
+			<li class="connectus"><a href="<?php echo url('index/connectus/index'); ?>">联系我们</a></li>
+		</ul>
+	</div>
+</div>
 
 <!--引入头部图片-->
 <div class="header_img">
@@ -80,201 +111,142 @@
 <div id="vue_store">
 	<div class="vue_store">
 		<h1>智慧小区体验馆，为服务助力</h1>
-		<ul>
-			<li><router-link to="/signo" active-class='cur_menu'>智能道闸</router-link></li>
-			<li><router-link to="/access" active-class='cur_menu'>安全门禁</router-link></li>
-			<li><router-link to="/vem" active-class='cur_menu'>自助售货机</router-link></li>
-			<li><router-link to="/chargingpile" active-class='cur_menu'>汽车充电桩</router-link></li>
-			<li><router-link to="/washcar" active-class='cur_menu'>自助洗车</router-link></li>
-			<li><router-link to="/delivery" active-class='cur_menu'>自助快递柜</router-link></li>
-			<li><router-link to="/payservice" active-class='cur_menu'>自助缴费终端</router-link></li>
-		</ul>
-		<div>
-			<router-view></router-view>
+		<div class="vue_store_header">
+			<ul>
+				<li v-on:click='changeStoreHead(1)' v-bind:class='{cur_menu:changeStoreNum_head==1}'>智能道闸</li>
+				<li v-on:click='changeStoreHead(2)' v-bind:class='{cur_menu:changeStoreNum_head==2}'>安全门禁</li>
+				<li v-on:click='changeStoreHead(3)' v-bind:class='{cur_menu:changeStoreNum_head==3}'>自助售货机</li>
+				<li v-on:click='changeStoreHead(4)' v-bind:class='{cur_menu:changeStoreNum_head==4}'>汽车充电桩</li>
+				<li v-on:click='changeStoreHead(5)' v-bind:class='{cur_menu:changeStoreNum_head==5}'>自助洗车</li>
+				<li v-on:click='changeStoreHead(6)' v-bind:class='{cur_menu:changeStoreNum_head==6}'>自助快递柜</li>
+				<li v-on:click='changeStoreHead(7)' v-bind:class='{cur_menu:changeStoreNum_head==7}'>自助缴费终端</li>
+			</ul>
+		</div>
+		<div class="vue_store_container">
+			<div class="signoHtml" v-if='changeStoreNum_head==1'>
+				<div class="h3_p">
+					<h3>智能识别功能</h3>
+					<p>自动识别车辆的车牌号码，并录入车辆管理系统</p>
+				</div>
+				<div class="h3_p">
+					<h3>费用计算功能</h3>
+					<p>自动识别车辆的车牌号码，并录入车辆管理系统</p>
+					<p>临时停车交费（根据物业规则设定）</p>
+					<p>临时停车有六种支付方式：乐住支付、现金支付、银联闪付、iPay支付 、微信支付、支付宝支付；</p>
+					<p>费用到期提醒功能（月卡用户）</p>
+				</div>
+				<div class="h3_p">
+					<h3>车辆进出记录</h3>
+					<p>对车辆的出入时间进行记录</p>
+				</div>
+				<div class="h3_p">
+					<h3>智能识别功能</h3>
+					<p>APP显示空闲车位并导航 (增配地磁感应设备，建议用于商业停车场）</p>
+				</div>
+				<div class="img_phone">
+					<img src="__STATIC_PATH__/static/productintro/images/zhxq1.png"/>
+				</div>
+			</div>
+			
+			<div class="accessHtml" v-if='changeStoreNum_head==2'>
+				<div class="h3_p">
+					<h3>业主开关门</h3>
+					<p>门禁卡开门；</p>
+					<p>门禁密码开门；</p>
+					<p>手机”摇一摇”开门，手机“点击”开门（厂家已实现，通过蓝牙开门需对厂家说明.</p>
+					<p>厂家才会装上蓝牙模块,实现APP开门功能）；</p>
+					<p>WIFI连接开门（需要门禁厂家设备有WIFI功能才能实现）</p>
+				</div>
+				<div class="h3_p">
+					<h3>访客开门</h3>
+					<p>访客输入密码钥匙(数字密码)开门。(需厂家系统支持业主端生成临时开门密码，开门后即时失效）</p>
+					<p>二维码扫码开门（需要门禁厂家在读卡器上安装二维码扫描器才能实现二维码开门，业主授权给访客，访客凭二维码扫描进入）</p>
+				</div>
+				<div class="h3_p">
+					<h3>门禁记录</h3>
+					<p>包含业主开关门、访客开关门及业主授权记录</p>
+				</div>
+				<div class="img_phone">
+					<img src="__STATIC_PATH__/static/productintro/images/zhxq2.png"/>
+				</div>
+			</div>
+			
+			<div class="vemHtml" v-if='changeStoreNum_head==3'>
+				<div class="many_p">
+					<p>充分运用云计算、物联网等新一代信息技术，将传统纸质货币进行自助售货机的购物，转向成线下购物，线上支付，通过手机APP进行扫码支付购物费用，进行线下自助售货机的购物交易。</p>
+					<p>1、支持市面主流支付方式例：乐住支付、银联支付、银联闪付、微信、支付宝、现金、一卡通等；</p>
+					<p>2、支持线上线下各种营销活动；</p>
+					<p>3、自助售货机商品种类、数量、价格查询；</p>
+					<p>4、自助售货机位置查询。</p>
+				</div>	
+				<div class="img_phone">
+					<img src="__STATIC_PATH__/static/productintro/images/zhxq3.png"/>
+				</div>
+			</div>
+			
+			<div class="chargingpileHtml" v-if='changeStoreNum_head==4'>
+				<div class="many_p">
+					<p>1.GPS定位功能：APP查看小区内的充电桩设备的位置</p>
+					<p>2.设备使用状态查看功能</p>
+					<p>3.费用计算功能：APP自动计算出本次充电费用</p>
+					<p>4.支付功能：乐住支付、微信、支付宝、银联支付</p>
+					<p>5.APP提醒功能：通过APP设置单次充电时间，充电结束自动提醒</p>
+				</div>	
+				<div class="img_phone">
+					<img src="__STATIC_PATH__/static/productintro/images/zhxq4.png"/>
+				</div>
+			</div>
+			
+			<div class="washcarHtml" v-if='changeStoreNum_head==5'>
+				<div class="many_p">
+					<p>1.GPS定位功能：APP查看小区内自助洗车设备位置</p>
+					<p>2.设备使用状态查看功能</p>
+					<p>3.费用计算功能：APP自动计算出本次充电费用</p>
+					<p>4.支付功能：乐住支付、微信、支付宝、银联支付</p>
+				</div>	
+				<div class="img_phone">
+					<img src="__STATIC_PATH__/static/productintro/images/zhxq5.png"/>
+				</div>
+			</div>
+			
+			<div class="deliveryHtml" v-if='changeStoreNum_head==6'>
+				<div class="many_p">
+					<p>1.有件到时乐住提醒有快件到达</p>
+					<p>2.通过乐住快件取键码打开自助收件柜</p>
+					<p>3.定位功能，安装快递柜的地方可通过GPS定位</p>
+					<p>4.还可自助邮寄快递，方便快捷，物业可赚取服务费</p>
+					<p>5.电子显示屏增设广告位，可提升物业营收</p>
+				</div>	
+				<div class="img_phone">
+					<img src="__STATIC_PATH__/static/productintro/images/zhxq6.png"/>
+				</div>
+			</div>
+			
+			<div class="payserviceHtml" v-if='changeStoreNum_head==7'>
+				<div class="many_p">
+					<p>1.银联便民支付，拥有银联支付的安全保障；</p>
+					<p>2.支持便民缴费等多种功能： 公共事业缴费如水费、电费、燃气费等；本省话费缴费、全国手机直充；银行卡查余等常用便民功能；信用卡还款等；</p>
+					<p>3.其他待开通功能：根据政务开放实际情况等，如办理民政类事务、社会保险等电子政务办理。</p>
+				</div>	
+				<div class="img_phone">
+					<img src="__STATIC_PATH__/static/productintro/images/zhxq7.png"/>
+				</div>
+			</div>
 		</div>
 	</div>	
 </div>
 
-<template id='signoHtml'>
-	<div class="signoHtml">
-		<div class="h3_p">
-			<h3>智能识别功能</h3>
-			<p>自动识别车辆的车牌号码，并录入车辆管理系统</p>
-		</div>
-		<div class="h3_p">
-			<h3>费用计算功能</h3>
-			<p>自动识别车辆的车牌号码，并录入车辆管理系统</p>
-			<p>临时停车交费（根据物业规则设定）</p>
-			<p>临时停车有六种支付方式：乐住支付、现金支付、银联闪付、iPay支付 、微信支付、支付宝支付；</p>
-			<p>费用到期提醒功能（月卡用户）</p>
-		</div>
-		<div class="h3_p">
-			<h3>车辆进出记录</h3>
-			<p>对车辆的出入时间进行记录</p>
-		</div>
-		<div class="h3_p">
-			<h3>智能识别功能</h3>
-			<p>APP显示空闲车位并导航 (增配地磁感应设备，建议用于商业停车场）</p>
-		</div>
-		<div class="img_phone">
-			<img src="__STATIC_PATH__/static/productintro/images/zhxq1.png"/>
-		</div>
-	</div>
-</template>
-
-<template id="accessHtml">
-	<div class="accessHtml">
-		<div class="h3_p">
-			<h3>业主开关门</h3>
-			<p>门禁卡开门；</p>
-			<p>门禁密码开门；</p>
-			<p>手机”摇一摇”开门，手机“点击”开门（厂家已实现，通过蓝牙开门需对厂家说明.</p>
-			<p>厂家才会装上蓝牙模块,实现APP开门功能）；</p>
-			<p>WIFI连接开门（需要门禁厂家设备有WIFI功能才能实现）</p>
-		</div>
-		<div class="h3_p">
-			<h3>访客开门</h3>
-			<p>访客输入密码钥匙(数字密码)开门。(需厂家系统支持业主端生成临时开门密码，开门后即时失效）</p>
-			<p>二维码扫码开门（需要门禁厂家在读卡器上安装二维码扫描器才能实现二维码开门，业主授权给访客，访客凭二维码扫描进入）</p>
-		</div>
-		<div class="h3_p">
-			<h3>门禁记录</h3>
-			<p>包含业主开关门、访客开关门及业主授权记录</p>
-		</div>
-		<div class="img_phone">
-			<img src="__STATIC_PATH__/static/productintro/images/zhxq2.png"/>
-		</div>
-	</div>
-</template>
-
-<template id="vemHtml">
-	<div class="vemHtml">
-		<div class="many_p">
-			<p>充分运用云计算、物联网等新一代信息技术，将传统纸质货币进行自助售货机的购物，转向成线下购物，线上支付，通过手机APP进行扫码支付购物费用，进行线下自助售货机的购物交易。</p>
-			<p>1、支持市面主流支付方式例：乐住支付、银联支付、银联闪付、微信、支付宝、现金、一卡通等；</p>
-			<p>2、支持线上线下各种营销活动；</p>
-			<p>3、自助售货机商品种类、数量、价格查询；</p>
-			<p>4、自助售货机位置查询。</p>
-		</div>	
-		<div class="img_phone">
-			<img src="__STATIC_PATH__/static/productintro/images/zhxq3.png"/>
-		</div>
-	</div>
-</template>
-
-<template id="chargingpileHtml">
-	<div class="chargingpileHtml">
-		<div class="many_p">
-			<p>1.GPS定位功能：APP查看小区内的充电桩设备的位置</p>
-			<p>2.设备使用状态查看功能</p>
-			<p>3.费用计算功能：APP自动计算出本次充电费用</p>
-			<p>4.支付功能：乐住支付、微信、支付宝、银联支付</p>
-			<p>5.APP提醒功能：通过APP设置单次充电时间，充电结束自动提醒</p>
-		</div>	
-		<div class="img_phone">
-			<img src="__STATIC_PATH__/static/productintro/images/zhxq4.png"/>
-		</div>
-	</div>
-</template>
-
-<template id="washcarHtml">
-	<div class="washcarHtml">
-		<div class="many_p">
-			<p>1.GPS定位功能：APP查看小区内自助洗车设备位置</p>
-			<p>2.设备使用状态查看功能</p>
-			<p>3.费用计算功能：APP自动计算出本次充电费用</p>
-			<p>4.支付功能：乐住支付、微信、支付宝、银联支付</p>
-		</div>	
-		<div class="img_phone">
-			<img src="__STATIC_PATH__/static/productintro/images/zhxq5.png"/>
-		</div>
-	</div>
-</template>
-
-<template id="deliveryHtml">
-	<div class="deliveryHtml">
-		<div class="many_p">
-			<p>1.有件到时乐住提醒有快件到达</p>
-			<p>2.通过乐住快件取键码打开自助收件柜</p>
-			<p>3.定位功能，安装快递柜的地方可通过GPS定位</p>
-			<p>4.还可自助邮寄快递，方便快捷，物业可赚取服务费</p>
-			<p>5.电子显示屏增设广告位，可提升物业营收</p>
-		</div>	
-		<div class="img_phone">
-			<img src="__STATIC_PATH__/static/productintro/images/zhxq6.png"/>
-		</div>
-	</div>
-</template>
-
-<template id="payserviceHtml">
-	<div class="payserviceHtml">
-		<div class="many_p">
-			<p>1.银联便民支付，拥有银联支付的安全保障；</p>
-			<p>2.支持便民缴费等多种功能： 公共事业缴费如水费、电费、燃气费等；本省话费缴费、全国手机直充；银行卡查余等常用便民功能；信用卡还款等；</p>
-			<p>3.其他待开通功能：根据政务开放实际情况等，如办理民政类事务、社会保险等电子政务办理。</p>
-		</div>	
-		<div class="img_phone">
-			<img src="__STATIC_PATH__/static/productintro/images/zhxq7.png"/>
-		</div>
-	</div>
-</template>
 <script type="text/javascript">
-	const router=new VueRouter({
-		routes:[
-			{
-				//重定向
-				path:'/',
-				redirect:'/signo'
-			},
-			{
-				path:'/signo',
-				component:{
-					template:'#signoHtml'
-				}
-			},
-			{
-				path:'/access',
-				component:{
-					template:'#accessHtml'
-				}
-			},
-			{
-				path:'/vem',
-				component:{
-					template:'#vemHtml'
-				}
-			},
-			{
-				path:'/chargingpile',
-				component:{
-					template:'#chargingpileHtml'
-				}
-			},
-			{
-				path:'/washcar',
-				component:{
-					template:'#washcarHtml'
-				}
-			},
-			{
-				path:'/delivery',
-				component:{
-					template:'#deliveryHtml'
-				}
-			},
-			{
-				path:'/payservice',
-				component:{
-					template:'#payserviceHtml'
-				}
-			}
-		]
-	});
 	new Vue({
-		el:"#vue_store",
-		data:[],
-		methods:{},
-		router
+		el:'#vue_store',
+		data:{
+			changeStoreNum_head:1
+		},
+		methods:{
+			changeStoreHead:function(num){
+				this.changeStoreNum_head=num;
+			}
+		}
 	});
 </script>
 
@@ -296,7 +268,7 @@
 		margin-top: 65px;
 	}
 	.vue_store ul li{
-		width: 165px;
+		width: 13%;
 		height: 40px;
 		background: #ededed;
 		text-align: center;
@@ -304,18 +276,16 @@
 		list-style: none;
 		line-height: 40px;
 		font-size: 18px;
-		margin-right: 20px;
+		margin-right: 1.5%;
+		color: #333333;
+		cursor: pointer;
 	}
-	.vue_store ul li .cur_menu{
+	.vue_store ul li:nth-child(7){
+		margin-right: 0;
+	}
+	.vue_store ul .cur_menu{
 		background: #49d075;
 		color: #FFFFFF;
-	}
-	.vue_store ul li a{
-		text-decoration: none;
-		color: #333333;
-		width: 165px;
-		height: 40px;
-		display: block;
 	}
 	.vue_store ul li:hover{
 		background: #49d075;		
@@ -329,10 +299,6 @@
 	.signoHtml,.accessHtml,.vemHtml,.chargingpileHtml,.washcarHtml,.deliveryHtml,.payserviceHtml{
 		padding-top: 45px;
 		position: relative;
-		animation: click_show 0.5s;
-		-moz-animation: click_show 0.5s;
-		-webkit-animation: click_show 0.5s;
-		-moz-animation: click_show 0.5s;
 	}
 	.signoHtml .h3_p,.accessHtml .h3_p{
 		margin-top: 35px;
@@ -345,7 +311,7 @@
 	}
 	.signoHtml p,.accessHtml p{
 		font-size: 16px;
-		line-height: 32px;
+		line-height: 25px;
 		color: #777;
 	}
 	.signoHtml .img_phone,.accessHtml .img_phone,.vemHtml .img_phone,.chargingpileHtml .img_phone,.washcarHtml .img_phone,.deliveryHtml .img_phone,.payserviceHtml .img_phone{
@@ -353,20 +319,168 @@
 		top: 200px;
 		right: -10px;
 	}
+	/*动画的操作*/
+	.signoHtml{
+		animation: store_click_show1 0.5s;
+		-moz-animation: store_click_show1 0.5s;
+		-webkit-animation: store_click_show1 0.5s;
+		-moz-animation: store_click_show1 0.5s;	
+	}
+	.accessHtml{
+		animation: store_click_show2 0.5s;
+		-moz-animation: store_click_show2 0.5s;
+		-webkit-animation: store_click_show2 0.5s;
+		-moz-animation: store_click_show2 0.5s;	
+	}
+	.vemHtml{
+		animation: store_click_show3 0.5s;
+		-moz-animation: store_click_show3 0.5s;
+		-webkit-animation: store_click_show3 0.5s;
+		-moz-animation: store_click_show3 0.5s;	
+	}
+	.chargingpileHtml{
+		animation: store_click_show4 0.5s;
+		-moz-animation: store_click_show4 0.5s;
+		-webkit-animation: store_click_show4 0.5s;
+		-moz-animation: store_click_show4 0.5s;	
+	}
+	.washcarHtml{
+		animation: store_click_show5 0.5s;
+		-moz-animation: store_click_show5 0.5s;
+		-webkit-animation: store_click_show5 0.5s;
+		-moz-animation: store_click_show5 0.5s;	
+	}
+	.deliveryHtml{
+		animation: store_click_show6 0.5s;
+		-moz-animation: store_click_show6 0.5s;
+		-webkit-animation: store_click_show6 0.5s;
+		-moz-animation: store_click_show6 0.5s;	
+	}
+	.payserviceHtml{
+		animation: store_click_show7 0.5s;
+		-moz-animation: store_click_show7 0.5s;
+		-webkit-animation: store_click_show7 0.5s;
+		-moz-animation: store_click_show7 0.5s;	
+	}
+	
+	
 	/*进场/点击时的动画，兼容其他浏览器*/
-	@keyframes click_show{
+	/*动画1*/
+	@keyframes store_click_show1{
 		from{top:-60px;}
 		to{top:0px;}
 	}
-	@-moz-keyframes click_show{
+	@-moz-keyframes store_click_show1{
 		from{top:-60px;}
 		to{top:0px;}
 	}
-	@-webkit-keyframes click_show{
+	@-webkit-keyframes store_click_show1{
 		from{top:-60px;}
 		to{top:0px;}
 	}
-	@-ms-keyframes click_show{
+	@-ms-keyframes store_click_show1{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	/*动画2*/
+	@keyframes store_click_show2{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-moz-keyframes store_click_show2{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-webkit-keyframes store_click_show2{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-ms-keyframes store_click_show2{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	/*动画3*/
+	@keyframes store_click_show3{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-moz-keyframes store_click_show3{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-webkit-keyframes store_click_show3{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-ms-keyframes store_click_show3{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	/*动画4*/
+	@keyframes store_click_show4{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-moz-keyframes store_click_show4{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-webkit-keyframes store_click_show4{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-ms-keyframes store_click_show4{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	/*动画5*/
+	@keyframes store_click_show5{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-moz-keyframes store_click_show5{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-webkit-keyframes store_click_show5{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-ms-keyframes store_click_show5{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	/*动画6*/
+	@keyframes store_click_show6{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-moz-keyframes store_click_show6{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-webkit-keyframes store_click_show6{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-ms-keyframes store_click_show6{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	/*动画7*/
+	@keyframes store_click_show7{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-moz-keyframes store_click_show7{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-webkit-keyframes store_click_show7{
+		from{top:-60px;}
+		to{top:0px;}
+	}
+	@-ms-keyframes store_click_show7{
 		from{top:-60px;}
 		to{top:0px;}
 	}
@@ -570,7 +684,7 @@
 		float: left;
 		position: absolute;
 		top: 100px;
-		right: 70px;
+		right: 40px;
 	}
 	.vue_internet .container1 .h3_p ul{
 		width: 600px;
@@ -611,7 +725,7 @@
 		float: left;
 		position: absolute;
 		top: 0px;
-		right: 150px;
+		right: 120px;
 	}
 	.vue_internet .container2 .many_p p,.vue_internet .container3 .many_p p{
 		margin-bottom: 60px;
@@ -741,7 +855,7 @@
 		float: left;
 		color: white;
 		margin-top: 205px;
-		margin-left: 105px;
+		margin-left: 5%;
 	}
 	.vue_internet_img .word_right h1{
 		font-size: 30px;
@@ -757,7 +871,7 @@
 </style>
 
 <!--引入公共导航尾部-->
-<div class="bc_navlistbar ">
+<div class="bc_footlistbar">
 	<div class="footer"><!-- 底部 -->
 		<div class="foot_l">
 			<h4>产品简介</h4>
@@ -809,7 +923,21 @@
 		<p>copyright©2012-2108版权所有 乐住网络服务有限公司 湘ICP 备B2-20140080</p>
 	</div>
 </div>
-	
+
+
+<div class="m-footer"> <!-- 底部 -->
+	<ul>
+		<li>
+			<a href="<?php echo url('index/index/index'); ?>">首页</a>
+		</li>
+		<li>
+			<a href="">QQ咨询</a>
+		</li>
+		<li>
+			<a href="">电话咨询</a>
+		</li>
+	</ul>
+</div>
 
 <!--引入公共尾部-->
 

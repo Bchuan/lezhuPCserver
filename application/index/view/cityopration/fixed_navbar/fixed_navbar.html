@@ -76,6 +76,7 @@
 	var getBartop=getBar.offset().top;
 	$(window).scroll(function(){
 		var H=$(document).scrollTop();
+		console.log(H)
 		if(H>getBartop-80){
 			$('.fixed_navbar').addClass('fixedclass');
 		}

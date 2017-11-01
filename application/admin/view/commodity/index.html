@@ -1,0 +1,50 @@
+{include file="public/header"} 
+
+ 
+<div class="container mt-3">
+    <a href="{:url('add')}" class="btn btn-info">添加</a>
+    <form action="" class="form">
+        <div class="form-group">
+            <label>课程分类</label>
+            <select name="cate_id">
+                <option value="">请选择</option>
+                {foreach $cate_list as $value}
+                    <option value="{$value['cate_id']}">{$value['cate_name']}</option>
+                    <!-- <?php if (isset($value['child_menu'])){ ?> -->
+                    {foreach $value['child_menu'] as $value2nd}
+                        <option value="{$value2nd['cate_id']}" style="padding-left:10px;">{$value2nd['cate_name']}</option>
+                        <!-- <?php if (isset($value2nd['child_menu'])){ ?> -->
+                        {foreach $value2nd['child_menu'] as $value3th}
+                        <option value="{$value3th['cate_id']}" style="padding-left:30px;">{$value3th['cate_name']}</option>
+                        {/foreach}
+                        <!-- <?php } ?> -->
+                    {/foreach}
+                    <!-- <?php } ?> -->
+                {/foreach}
+            </select>
+             <input type="submit" class="btn btn-info" value="搜索">
+        </div>
+    </form>
+    <table class="table">
+        <tr>
+            <th>编号</th>
+            <th>商品名称</th>
+            <th>类型</th>
+            <th>操作</th>
+        </tr>
+        {foreach $cmd_list as $value}
+        <tr>
+            <td>{$value['cmd_id']}</td>
+            <td>{$value['cmd_name']}</td>
+            <td>{$value['cate_name']}</td>
+            <td><a href="" class="btn btn-danger">删除</a></td>
+            <td><a href="{:url('edit',['cmd_id'=>$value['cmd_id']])}" class="btn btn-danger">编辑</a></td>
+        </tr>
+        {/foreach}
+    </table>
+    <div>
+     {$cmd_list->render()}
+    </div>
+</div>
+
+{include file="public/footer"}
